@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="minosegbiztositasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'minosegbiztositas.dbo.Login' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="password" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="username" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka1$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka1$">
+          <Property Name="F1" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka10$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka10$">
+          <Property Name="Tabelul 3#3# Rezultatele evaluării de către management a cadrelo" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="nvarchar" MaxLength="255" />
+          <Property Name="F10" Type="nvarchar" MaxLength="255" />
+          <Property Name="F11" Type="nvarchar" MaxLength="255" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="nvarchar" MaxLength="255" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka11$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka11$">
+          <Property Name="Tabelul 3#4# Rezultatele evaluării de către studenți a cadrelor " Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="nvarchar" MaxLength="255" />
+          <Property Name="F5" Type="nvarchar" MaxLength="255" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="nvarchar" MaxLength="255" />
+          <Property Name="F8" Type="nvarchar" MaxLength="255" />
+          <Property Name="F9" Type="nvarchar" MaxLength="255" />
+          <Property Name="F10" Type="nvarchar" MaxLength="255" />
+          <Property Name="F11" Type="nvarchar" MaxLength="255" />
+          <Property Name="F12" Type="nvarchar" MaxLength="255" />
+          <Property Name="F13" Type="nvarchar" MaxLength="255" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="nvarchar" MaxLength="255" />
+          <Property Name="F16" Type="nvarchar" MaxLength="255" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="nvarchar" MaxLength="255" />
+          <Property Name="F19" Type="nvarchar" MaxLength="255" />
+          <Property Name="F20" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka12$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka12$">
+          <Property Name="Tabel 4#1# Rezultatele activităţii de cercetare oglindite prin p" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="nvarchar" MaxLength="255" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="nvarchar" MaxLength="255" />
+          <Property Name="F19" Type="nvarchar" MaxLength="255" />
+          <Property Name="F20" Type="nvarchar" MaxLength="255" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+          <Property Name="F23" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka13$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka13$">
+          <Property Name="Tabel 4#2# Rezultatele cercetării oglindite prin granturi şi con" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka14$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka14$">
+          <Property Name="Tabel 4#3# Sinteza evenimentelor organizate la nivelul facultăți" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka15$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka15$">
+          <Property Name="Tabelul 4#4# Participări la manifestări ştiinţifice şi artistice" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="nvarchar" MaxLength="255" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka16$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka16$">
+          <Property Name="Tabel 5#1#  Sinteza ocupării locurilor la specializările facultă" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka17$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka17$">
+          <Property Name="Tabelul 5#2# Efectivul de studenţi şi formaţii de studiu la nive" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka18$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka18$">
+          <Property Name="F1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Situaţia gradului de promovare a anilor de studii în anul univer" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="nvarchar" MaxLength="255" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka19$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka19$">
+          <Property Name="F1" Type="nvarchar(max)" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="EZT AZ OLDALT NEM KELL KITÖLTENI, AUTOMATIKUSAN VESZI AZ ADATOKA" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka2$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka2$">
+          <Property Name="Tabelul 2#1a# Situaţia cadrelor didactice titularizate în învăţă" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="nvarchar" MaxLength="255" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+          <Property Name="F23" Type="nvarchar" MaxLength="255" />
+          <Property Name="F24" Type="nvarchar" MaxLength="255" />
+          <Property Name="F25" Type="nvarchar" MaxLength="255" />
+          <Property Name="F26" Type="nvarchar" MaxLength="255" />
+          <Property Name="F27" Type="nvarchar" MaxLength="255" />
+          <Property Name="F28" Type="nvarchar" MaxLength="255" />
+          <Property Name="F29" Type="nvarchar" MaxLength="255" />
+          <Property Name="F30" Type="nvarchar" MaxLength="255" />
+          <Property Name="F31" Type="nvarchar" MaxLength="255" />
+          <Property Name="F32" Type="nvarchar" MaxLength="255" />
+          <Property Name="F33" Type="nvarchar" MaxLength="255" />
+          <Property Name="F34" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka20$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka20$">
+          <Property Name="F1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Media de absolvire şi media de licenţă pe universitate" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka21$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka21$">
+          <Property Name="F1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Situația comparativă a burselor  la nivel de programe și facultă" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="nvarchar" MaxLength="255" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka22$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka22$">
+          <Property Name="Gradul de mulţumire a studenţilor din ultimul an de studiu cu ac" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka23$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka23$">
+          <Property Name="Gradul de mulţumire al studenţilor din ultimul an de studiu cu i" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka24$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka24$">
+          <Property Name="Gradul de mulţumire al studenţilor din ultimul an de studiu cu p" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka25$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka25$">
+          <Property Name="Raport student/cadru didactic pe anul universitar 2018/2019" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka3$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka3$">
+          <Property Name="Tabelul 2#1b# Situaţia cadrelor didactice netitularizate în învă" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="nvarchar" MaxLength="255" />
+          <Property Name="F5" Type="nvarchar" MaxLength="255" />
+          <Property Name="F6" Type="nvarchar" MaxLength="255" />
+          <Property Name="F7" Type="nvarchar" MaxLength="255" />
+          <Property Name="F8" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka4$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka4$">
+          <Property Name="Tabelul 2#2# Situaţia posturilor conform Statelor de funcţii ale" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="nvarchar" MaxLength="255" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.'Munka5 (2)$'' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="'Munka5 (2)$'">
+          <Property Name="Tabelul 2#3# Situaţia gradului de acoperire a posturilor din pro" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka5$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka5$">
+          <Property Name="Tabelul 2#3# Situaţia gradului de acoperire a posturilor din pro" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka6$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka6$">
+          <Property Name="Tabelul 2#4# Media de vârstă a cadrelor didactice titulare confo" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka7$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka7$">
+          <Property Name="Tabelul 2#5# Situaţia cadrelor didactice pensionate (nr# persoan" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka8$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka8$">
+          <Property Name="Tabelul 3#1# Situaţia elaborării materialelor didactice care aco" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="float" />
+          <Property Name="F13" Type="float" />
+          <Property Name="F14" Type="float" />
+          <Property Name="F15" Type="float" />
+          <Property Name="F16" Type="float" />
+          <Property Name="F17" Type="float" />
+          <Property Name="F18" Type="float" />
+          <Property Name="F19" Type="float" />
+          <Property Name="F20" Type="float" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+          <Property Name="F23" Type="nvarchar" MaxLength="255" />
+          <Property Name="F24" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'minosegbiztositas.dbo.Munka9$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Munka9$">
+          <Property Name="Tabel 3#2a# Evaluarea atmosferei de lucru din departamente la ni" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="nvarchar" MaxLength="255" />
+          <Property Name="F3" Type="float" />
+          <Property Name="F4" Type="float" />
+          <Property Name="F5" Type="float" />
+          <Property Name="F6" Type="float" />
+          <Property Name="F7" Type="float" />
+          <Property Name="F8" Type="float" />
+          <Property Name="F9" Type="float" />
+          <Property Name="F10" Type="float" />
+          <Property Name="F11" Type="float" />
+          <Property Name="F12" Type="nvarchar" MaxLength="255" />
+          <Property Name="F13" Type="nvarchar" MaxLength="255" />
+          <Property Name="F14" Type="nvarchar" MaxLength="255" />
+          <Property Name="F15" Type="nvarchar" MaxLength="255" />
+          <Property Name="F16" Type="nvarchar" MaxLength="255" />
+          <Property Name="F17" Type="nvarchar" MaxLength="255" />
+          <Property Name="F18" Type="float" />
+        </EntityType>-->
+  <EntityContainer Name="minosegbiztositasModelStoreContainer">
+    <EntitySet Name="Login" EntityType="Self.Login" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Login].[id] AS [id], 
+    [Login].[username] AS [username], 
+    [Login].[password] AS [password]
+    FROM [dbo].[Login] AS [Login]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

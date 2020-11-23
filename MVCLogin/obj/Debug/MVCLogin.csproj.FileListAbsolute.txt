@@ -1,0 +1,169 @@
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\MVCLogin.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\EntityFramework.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\EntityFramework.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojResolveAssemblyReference.cache
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+F:\Youtube Channel\Dotnet Mob\MVC\Login App\Project\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\MVCLogin.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EntityFramework.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Common.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Design.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebDesign.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.SqlServer.Types.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.Web.Infrastructure.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EnvDTE.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EnvDTE80.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\stdole.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Microsoft.MSXML.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EntityFramework.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.xml
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\RdlCompile.cache
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\RdlCompile.compiled
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CopyComplete
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojAssemblyReference.cache
+D:\Egyetem\3IK év MÁSODIK félév\MVCLogin\MVCLogin\MVCLogin\bin\Report_RDLCMyinfo.rdlc
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Report_RDLCMyinfo.rdlc
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.DataVisualization.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Design.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebDesign.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EnvDTE.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EnvDTE80.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\stdole.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.MSXML.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojAssemblyReference.cache
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\RdlCompile.cache
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\RdlCompile.compiled
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CopyComplete
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb
+C:\Users\Tamas\Desktop\MinosegBiztositas\MVCLogin\MVCLogin\bin\ReportUni.rdlc
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\RdlCompile.cache
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\RdlCompile.compiled
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CoreCompileInputs.cache
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\msvcr120.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\msvcr120.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Common.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.Design.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebDesign.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.SqlServer.Types.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.Web.Infrastructure.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EnvDTE.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EnvDTE80.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\stdole.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.MSXML.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Deployment.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\System.Web.WebPages.Razor.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CopyComplete
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MinosegBiztositas\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojAssemblyReference.cache

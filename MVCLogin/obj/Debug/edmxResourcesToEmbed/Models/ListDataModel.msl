@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="allamvizsgaModelStoreContainer" CdmEntityContainer="allamvizsgaEntities">
+    <EntitySetMapping Name="DataInfoes">
+      <EntityTypeMapping TypeName="allamvizsgaModel.DataInfo">
+        <MappingFragment StoreEntitySet="DataInfo">
+          <ScalarProperty Name="Facultatea" ColumnName="Facultatea" />
+          <ScalarProperty Name="Denumirea_programului_de_studiu" ColumnName="Denumirea programului de studiu" />
+          <ScalarProperty Name="Situaţia_programului_de_studiu" ColumnName="Situaţia programului de studiu" />
+          <ScalarProperty Name="Anul_de_evaluarea_internă_externă__reevaluare" ColumnName="Anul de evaluarea internă/externă, reevaluare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

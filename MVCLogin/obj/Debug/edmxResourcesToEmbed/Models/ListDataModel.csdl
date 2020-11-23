@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="allamvizsgaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DataInfo">
+    <Key>
+      <PropertyRef Name="Facultatea" />
+    </Key>
+    <Property Name="Facultatea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Denumirea_programului_de_studiu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Situaţia_programului_de_studiu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Anul_de_evaluarea_internă_externă__reevaluare" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="allamvizsgaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DataInfoes" EntityType="Self.DataInfo" />
+  </EntityContainer>
+</Schema>
