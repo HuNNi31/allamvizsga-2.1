@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RDLC_ReportTutorial.aspx.cs" Inherits="MVCLogin.RDLC_ReportTutorial" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Adattipus.aspx.cs" Inherits="MVCLogin.RDLC_ReportTutorial1" %>
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 
@@ -9,9 +9,9 @@
     <title></title>
         <style>
         body {
-            background: #76b852;
+             background: #76b852;
         }
-            /* Add a black background color to the top navigation */
+        /* Add a black background color to the top navigation */
         .topnav {
             background-color: #333;
             overflow: hidden;
@@ -41,15 +41,11 @@
                 .topnav a.last{
                     float:right;
                 }
-         .table {
-              margin-left: auto;
-              margin-right: auto;
-         }
+                
     </style>
 </head>
 <body>
-
-             <div>
+     <div>
         <h1>Dashboard</h1>
        
         <div class="topnav">
@@ -60,24 +56,22 @@
                 <a runat="server" href="~/Adattipus.aspx">AdattipusokRDLC</a>
                 <a runat="server" href="~/Default.aspx">TanarTablazat</a>
                 <!--ASPX linkek vége-->
-            <a class="last" runat="server" href="~/Home/Index">Back</a>
-            <a class="last" runat="server" href="~/Home/Profil">Profil</a>
+            <a class="last" runat="server" href="~/Home/Profil">Back</a>
+            <a class="last" runat="server" href="~/Login/Index">Profil</a>
      
 
         </div>
     </div>
-
     <form id="form1" runat="server">
         <div style="height: 196px">
         <asp:Panel ID="Panel1" runat="server">
+            <%--int width = (Request.Browser.ScreenPixelsWidth) * 2 - 100;
+            int height = (Request.Browser.ScreenPixelsHeight) * 2 - 100;--%>
             <asp:ScriptManager ID="ScriptManager1" runat="server">   </asp:ScriptManager>
-            <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="922px">
-              <%--  <LocalReport ReportEmbeddedResource="MVCLogin.ReportUni.rdlc">
-                    <DataSources>
-                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="DataSet2" />
-                    </DataSources>
-                </LocalReport>--%>
+            <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="100%" Height="547px">
+
             </rsweb:ReportViewer>
+            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="MunkaDataSetTableAdapters.Munka1_TableAdapter"></asp:ObjectDataSource>
            <%-- <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="userDataSetTableAdapters.LoginABTableAdapter"></asp:ObjectDataSource>--%>
               </asp:Panel>
         </div>

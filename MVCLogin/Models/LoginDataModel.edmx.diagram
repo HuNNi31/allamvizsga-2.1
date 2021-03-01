@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="minosegbiztositasModel.Role" Width="1.5" PointX="3" PointY="0.875" />
         <EntityTypeShape EntityType="minosegbiztositasModel.User" Width="1.5" PointX="0.75" PointY="0.875" />
         <AssociationConnector Association="minosegbiztositasModel.FK_Role_User" />
+        <EntityTypeShape EntityType="minosegbiztositasModel.Adattipus" Width="1.5" PointX="6.375" PointY="0.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

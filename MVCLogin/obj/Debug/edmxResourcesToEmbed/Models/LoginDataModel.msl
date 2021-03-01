@@ -19,5 +19,27 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Adattipus">
+      <EntityTypeMapping TypeName="minosegbiztositasModel.Adattipus">
+        <MappingFragment StoreEntitySet="Adattipus">
+          <ScalarProperty Name="Gradul_de_multumire" ColumnName="Gradul_de_multumire" />
+          <ScalarProperty Name="Programe_de_studii" ColumnName="Programe_de_studii" />
+          <ScalarProperty Name="Graduri_de_promovare" ColumnName="Graduri_de_promovare" />
+          <ScalarProperty Name="Manifestari" ColumnName="Manifestari" />
+          <ScalarProperty Name="Rendezvenyek" ColumnName="Rendezvenyek" />
+          <ScalarProperty Name="Granturi" ColumnName="Granturi" />
+          <ScalarProperty Name="Aktivitas" ColumnName="Aktivitas" />
+          <ScalarProperty Name="Formatum" ColumnName="Formatum" />
+          <ScalarProperty Name="ISBN_tananyag" ColumnName="ISBN_tananyag" />
+          <ScalarProperty Name="TanariAllas" ColumnName="TanariAllas" />
+          <ScalarProperty Name="Tanszek" ColumnName="Tanszek" />
+          <ScalarProperty Name="TanarFizetes" ColumnName="TanarFizetes" />
+          <ScalarProperty Name="SzakAllapot" ColumnName="SzakAllapot" />
+          <ScalarProperty Name="TanarCim" ColumnName="TanarCim" />
+          <ScalarProperty Name="Szakok" ColumnName="Szakok" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

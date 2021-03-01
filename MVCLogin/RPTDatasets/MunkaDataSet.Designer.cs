@@ -24,7 +24,7 @@ namespace MVCLogin.RPTDatasets {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class MunkaDataSet : global::System.Data.DataSet {
         
-        private _Munka1_DataTable _tableMunka1_;
+        private AdattipusDataTable tableAdattipus;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace MVCLogin.RPTDatasets {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Munka1$"] != null)) {
-                    base.Tables.Add(new _Munka1_DataTable(ds.Tables["Munka1$"]));
+                if ((ds.Tables["Adattipus"] != null)) {
+                    base.Tables.Add(new AdattipusDataTable(ds.Tables["Adattipus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace MVCLogin.RPTDatasets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public _Munka1_DataTable _Munka1_ {
+        public AdattipusDataTable Adattipus {
             get {
-                return this._tableMunka1_;
+                return this.tableAdattipus;
             }
         }
         
@@ -152,8 +152,8 @@ namespace MVCLogin.RPTDatasets {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Munka1$"] != null)) {
-                    base.Tables.Add(new _Munka1_DataTable(ds.Tables["Munka1$"]));
+                if ((ds.Tables["Adattipus"] != null)) {
+                    base.Tables.Add(new AdattipusDataTable(ds.Tables["Adattipus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace MVCLogin.RPTDatasets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this._tableMunka1_ = ((_Munka1_DataTable)(base.Tables["Munka1$"]));
+            this.tableAdattipus = ((AdattipusDataTable)(base.Tables["Adattipus"]));
             if ((initTable == true)) {
-                if ((this._tableMunka1_ != null)) {
-                    this._tableMunka1_.InitVars();
+                if ((this.tableAdattipus != null)) {
+                    this.tableAdattipus.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace MVCLogin.RPTDatasets {
             this.Namespace = "http://tempuri.org/MunkaDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this._tableMunka1_ = new _Munka1_DataTable();
-            base.Tables.Add(this._tableMunka1_);
+            this.tableAdattipus = new AdattipusDataTable();
+            base.Tables.Add(this.tableAdattipus);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerialize_Munka1_() {
+        private bool ShouldSerializeAdattipus() {
             return false;
         }
         
@@ -270,27 +270,51 @@ namespace MVCLogin.RPTDatasets {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void _Munka1_RowChangeEventHandler(object sender, _Munka1_RowChangeEvent e);
+        public delegate void AdattipusRowChangeEventHandler(object sender, AdattipusRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class _Munka1_DataTable : global::System.Data.TypedTableBase<_Munka1_Row> {
+        public partial class AdattipusDataTable : global::System.Data.TypedTableBase<AdattipusRow> {
             
-            private global::System.Data.DataColumn columnF1;
+            private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnF2;
+            private global::System.Data.DataColumn columnSzakok;
             
-            private global::System.Data.DataColumn columnF3;
+            private global::System.Data.DataColumn columnTanarCim;
             
-            private global::System.Data.DataColumn columnF4;
+            private global::System.Data.DataColumn columnSzakAllapot;
+            
+            private global::System.Data.DataColumn columnTanarFizetes;
+            
+            private global::System.Data.DataColumn columnTanszek;
+            
+            private global::System.Data.DataColumn columnTanariAllas;
+            
+            private global::System.Data.DataColumn columnISBN_tananyag;
+            
+            private global::System.Data.DataColumn columnFormatum;
+            
+            private global::System.Data.DataColumn columnAktivitas;
+            
+            private global::System.Data.DataColumn columnGranturi;
+            
+            private global::System.Data.DataColumn columnRendezvenyek;
+            
+            private global::System.Data.DataColumn columnManifestari;
+            
+            private global::System.Data.DataColumn columnGraduri_de_promovare;
+            
+            private global::System.Data.DataColumn columnPrograme_de_studii;
+            
+            private global::System.Data.DataColumn columnGradul_de_multumire;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_DataTable() {
-                this.TableName = "Munka1$";
+            public AdattipusDataTable() {
+                this.TableName = "Adattipus";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +322,7 @@ namespace MVCLogin.RPTDatasets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal _Munka1_DataTable(global::System.Data.DataTable table) {
+            internal AdattipusDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,40 +339,136 @@ namespace MVCLogin.RPTDatasets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected _Munka1_DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AdattipusDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn F1Column {
+            public global::System.Data.DataColumn IDColumn {
                 get {
-                    return this.columnF1;
+                    return this.columnID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn F2Column {
+            public global::System.Data.DataColumn SzakokColumn {
                 get {
-                    return this.columnF2;
+                    return this.columnSzakok;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn F3Column {
+            public global::System.Data.DataColumn TanarCimColumn {
                 get {
-                    return this.columnF3;
+                    return this.columnTanarCim;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn F4Column {
+            public global::System.Data.DataColumn SzakAllapotColumn {
                 get {
-                    return this.columnF4;
+                    return this.columnSzakAllapot;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TanarFizetesColumn {
+                get {
+                    return this.columnTanarFizetes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TanszekColumn {
+                get {
+                    return this.columnTanszek;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TanariAllasColumn {
+                get {
+                    return this.columnTanariAllas;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ISBN_tananyagColumn {
+                get {
+                    return this.columnISBN_tananyag;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FormatumColumn {
+                get {
+                    return this.columnFormatum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AktivitasColumn {
+                get {
+                    return this.columnAktivitas;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn GranturiColumn {
+                get {
+                    return this.columnGranturi;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn RendezvenyekColumn {
+                get {
+                    return this.columnRendezvenyek;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ManifestariColumn {
+                get {
+                    return this.columnManifestari;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Graduri_de_promovareColumn {
+                get {
+                    return this.columnGraduri_de_promovare;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Programe_de_studiiColumn {
+                get {
+                    return this.columnPrograme_de_studii;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Gradul_de_multumireColumn {
+                get {
+                    return this.columnGradul_de_multumire;
                 }
             }
             
@@ -363,48 +483,83 @@ namespace MVCLogin.RPTDatasets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_Row this[int index] {
+            public AdattipusRow this[int index] {
                 get {
-                    return ((_Munka1_Row)(this.Rows[index]));
+                    return ((AdattipusRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event _Munka1_RowChangeEventHandler _Munka1_RowChanging;
+            public event AdattipusRowChangeEventHandler AdattipusRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event _Munka1_RowChangeEventHandler _Munka1_RowChanged;
+            public event AdattipusRowChangeEventHandler AdattipusRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event _Munka1_RowChangeEventHandler _Munka1_RowDeleting;
+            public event AdattipusRowChangeEventHandler AdattipusRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event _Munka1_RowChangeEventHandler _Munka1_RowDeleted;
+            public event AdattipusRowChangeEventHandler AdattipusRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Add_Munka1_Row(_Munka1_Row row) {
+            public void AddAdattipusRow(AdattipusRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_Row Add_Munka1_Row(string F1, string F2, string F3, double F4) {
-                _Munka1_Row row_Munka1_Row = ((_Munka1_Row)(this.NewRow()));
+            public AdattipusRow AddAdattipusRow(
+                        int ID, 
+                        string Szakok, 
+                        string TanarCim, 
+                        string SzakAllapot, 
+                        string TanarFizetes, 
+                        string Tanszek, 
+                        string TanariAllas, 
+                        string ISBN_tananyag, 
+                        string Formatum, 
+                        string Aktivitas, 
+                        string Granturi, 
+                        string Rendezvenyek, 
+                        string Manifestari, 
+                        string Graduri_de_promovare, 
+                        string Programe_de_studii, 
+                        string Gradul_de_multumire) {
+                AdattipusRow rowAdattipusRow = ((AdattipusRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        F1,
-                        F2,
-                        F3,
-                        F4};
-                row_Munka1_Row.ItemArray = columnValuesArray;
-                this.Rows.Add(row_Munka1_Row);
-                return row_Munka1_Row;
+                        ID,
+                        Szakok,
+                        TanarCim,
+                        SzakAllapot,
+                        TanarFizetes,
+                        Tanszek,
+                        TanariAllas,
+                        ISBN_tananyag,
+                        Formatum,
+                        Aktivitas,
+                        Granturi,
+                        Rendezvenyek,
+                        Manifestari,
+                        Graduri_de_promovare,
+                        Programe_de_studii,
+                        Gradul_de_multumire};
+                rowAdattipusRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAdattipusRow);
+                return rowAdattipusRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AdattipusRow FindByID(int ID) {
+                return ((AdattipusRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                _Munka1_DataTable cln = ((_Munka1_DataTable)(base.Clone()));
+                AdattipusDataTable cln = ((AdattipusDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -412,60 +567,110 @@ namespace MVCLogin.RPTDatasets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new _Munka1_DataTable();
+                return new AdattipusDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnF1 = base.Columns["F1"];
-                this.columnF2 = base.Columns["F2"];
-                this.columnF3 = base.Columns["F3"];
-                this.columnF4 = base.Columns["F4"];
+                this.columnID = base.Columns["ID"];
+                this.columnSzakok = base.Columns["Szakok"];
+                this.columnTanarCim = base.Columns["TanarCim"];
+                this.columnSzakAllapot = base.Columns["SzakAllapot"];
+                this.columnTanarFizetes = base.Columns["TanarFizetes"];
+                this.columnTanszek = base.Columns["Tanszek"];
+                this.columnTanariAllas = base.Columns["TanariAllas"];
+                this.columnISBN_tananyag = base.Columns["ISBN_tananyag"];
+                this.columnFormatum = base.Columns["Formatum"];
+                this.columnAktivitas = base.Columns["Aktivitas"];
+                this.columnGranturi = base.Columns["Granturi"];
+                this.columnRendezvenyek = base.Columns["Rendezvenyek"];
+                this.columnManifestari = base.Columns["Manifestari"];
+                this.columnGraduri_de_promovare = base.Columns["Graduri_de_promovare"];
+                this.columnPrograme_de_studii = base.Columns["Programe_de_studii"];
+                this.columnGradul_de_multumire = base.Columns["Gradul_de_multumire"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnF1 = new global::System.Data.DataColumn("F1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnF1);
-                this.columnF2 = new global::System.Data.DataColumn("F2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnF2);
-                this.columnF3 = new global::System.Data.DataColumn("F3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnF3);
-                this.columnF4 = new global::System.Data.DataColumn("F4", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnF4);
-                this.columnF1.MaxLength = 255;
-                this.columnF2.MaxLength = 255;
-                this.columnF3.MaxLength = 255;
-                this.ExtendedProperties.Add("Generator_TableVarName", "_tableMunka1_");
-                this.ExtendedProperties.Add("Generator_UserTableName", "Munka1$");
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnSzakok = new global::System.Data.DataColumn("Szakok", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSzakok);
+                this.columnTanarCim = new global::System.Data.DataColumn("TanarCim", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTanarCim);
+                this.columnSzakAllapot = new global::System.Data.DataColumn("SzakAllapot", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSzakAllapot);
+                this.columnTanarFizetes = new global::System.Data.DataColumn("TanarFizetes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTanarFizetes);
+                this.columnTanszek = new global::System.Data.DataColumn("Tanszek", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTanszek);
+                this.columnTanariAllas = new global::System.Data.DataColumn("TanariAllas", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTanariAllas);
+                this.columnISBN_tananyag = new global::System.Data.DataColumn("ISBN_tananyag", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnISBN_tananyag);
+                this.columnFormatum = new global::System.Data.DataColumn("Formatum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFormatum);
+                this.columnAktivitas = new global::System.Data.DataColumn("Aktivitas", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAktivitas);
+                this.columnGranturi = new global::System.Data.DataColumn("Granturi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGranturi);
+                this.columnRendezvenyek = new global::System.Data.DataColumn("Rendezvenyek", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRendezvenyek);
+                this.columnManifestari = new global::System.Data.DataColumn("Manifestari", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnManifestari);
+                this.columnGraduri_de_promovare = new global::System.Data.DataColumn("Graduri_de_promovare", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGraduri_de_promovare);
+                this.columnPrograme_de_studii = new global::System.Data.DataColumn("Programe_de_studii", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrograme_de_studii);
+                this.columnGradul_de_multumire = new global::System.Data.DataColumn("Gradul_de_multumire", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGradul_de_multumire);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
+                this.columnSzakok.MaxLength = 50;
+                this.columnTanarCim.MaxLength = 50;
+                this.columnSzakAllapot.MaxLength = 50;
+                this.columnTanarFizetes.MaxLength = 50;
+                this.columnTanszek.MaxLength = 50;
+                this.columnTanariAllas.MaxLength = 50;
+                this.columnISBN_tananyag.MaxLength = 50;
+                this.columnFormatum.MaxLength = 50;
+                this.columnAktivitas.MaxLength = 50;
+                this.columnGranturi.MaxLength = 50;
+                this.columnRendezvenyek.MaxLength = 50;
+                this.columnManifestari.MaxLength = 50;
+                this.columnGraduri_de_promovare.MaxLength = 50;
+                this.columnPrograme_de_studii.MaxLength = 50;
+                this.columnGradul_de_multumire.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_Row New_Munka1_Row() {
-                return ((_Munka1_Row)(this.NewRow()));
+            public AdattipusRow NewAdattipusRow() {
+                return ((AdattipusRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new _Munka1_Row(builder);
+                return new AdattipusRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(_Munka1_Row);
+                return typeof(AdattipusRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this._Munka1_RowChanged != null)) {
-                    this._Munka1_RowChanged(this, new _Munka1_RowChangeEvent(((_Munka1_Row)(e.Row)), e.Action));
+                if ((this.AdattipusRowChanged != null)) {
+                    this.AdattipusRowChanged(this, new AdattipusRowChangeEvent(((AdattipusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -473,8 +678,8 @@ namespace MVCLogin.RPTDatasets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this._Munka1_RowChanging != null)) {
-                    this._Munka1_RowChanging(this, new _Munka1_RowChangeEvent(((_Munka1_Row)(e.Row)), e.Action));
+                if ((this.AdattipusRowChanging != null)) {
+                    this.AdattipusRowChanging(this, new AdattipusRowChangeEvent(((AdattipusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -482,8 +687,8 @@ namespace MVCLogin.RPTDatasets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this._Munka1_RowDeleted != null)) {
-                    this._Munka1_RowDeleted(this, new _Munka1_RowChangeEvent(((_Munka1_Row)(e.Row)), e.Action));
+                if ((this.AdattipusRowDeleted != null)) {
+                    this.AdattipusRowDeleted(this, new AdattipusRowChangeEvent(((AdattipusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -491,14 +696,14 @@ namespace MVCLogin.RPTDatasets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this._Munka1_RowDeleting != null)) {
-                    this._Munka1_RowDeleting(this, new _Munka1_RowChangeEvent(((_Munka1_Row)(e.Row)), e.Action));
+                if ((this.AdattipusRowDeleting != null)) {
+                    this.AdattipusRowDeleting(this, new AdattipusRowChangeEvent(((AdattipusRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Remove_Munka1_Row(_Munka1_Row row) {
+            public void RemoveAdattipusRow(AdattipusRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -525,7 +730,7 @@ namespace MVCLogin.RPTDatasets {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "_Munka1_DataTable";
+                attribute2.FixedValue = "AdattipusDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -569,127 +774,446 @@ namespace MVCLogin.RPTDatasets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class _Munka1_Row : global::System.Data.DataRow {
+        public partial class AdattipusRow : global::System.Data.DataRow {
             
-            private _Munka1_DataTable _tableMunka1_;
+            private AdattipusDataTable tableAdattipus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal _Munka1_Row(global::System.Data.DataRowBuilder rb) : 
+            internal AdattipusRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this._tableMunka1_ = ((_Munka1_DataTable)(this.Table));
+                this.tableAdattipus = ((AdattipusDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string F1 {
+            public int ID {
+                get {
+                    return ((int)(this[this.tableAdattipus.IDColumn]));
+                }
+                set {
+                    this[this.tableAdattipus.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Szakok {
                 get {
                     try {
-                        return ((string)(this[this._tableMunka1_.F1Column]));
+                        return ((string)(this[this.tableAdattipus.SzakokColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'F1\' in table \'Munka1$\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Szakok\' in table \'Adattipus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableMunka1_.F1Column] = value;
+                    this[this.tableAdattipus.SzakokColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string F2 {
+            public string TanarCim {
                 get {
                     try {
-                        return ((string)(this[this._tableMunka1_.F2Column]));
+                        return ((string)(this[this.tableAdattipus.TanarCimColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'F2\' in table \'Munka1$\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TanarCim\' in table \'Adattipus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableMunka1_.F2Column] = value;
+                    this[this.tableAdattipus.TanarCimColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string F3 {
+            public string SzakAllapot {
                 get {
                     try {
-                        return ((string)(this[this._tableMunka1_.F3Column]));
+                        return ((string)(this[this.tableAdattipus.SzakAllapotColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'F3\' in table \'Munka1$\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SzakAllapot\' in table \'Adattipus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableMunka1_.F3Column] = value;
+                    this[this.tableAdattipus.SzakAllapotColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public double F4 {
+            public string TanarFizetes {
                 get {
                     try {
-                        return ((double)(this[this._tableMunka1_.F4Column]));
+                        return ((string)(this[this.tableAdattipus.TanarFizetesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'F4\' in table \'Munka1$\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TanarFizetes\' in table \'Adattipus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableMunka1_.F4Column] = value;
+                    this[this.tableAdattipus.TanarFizetesColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsF1Null() {
-                return this.IsNull(this._tableMunka1_.F1Column);
+            public string Tanszek {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.TanszekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Tanszek\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.TanszekColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetF1Null() {
-                this[this._tableMunka1_.F1Column] = global::System.Convert.DBNull;
+            public string TanariAllas {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.TanariAllasColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TanariAllas\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.TanariAllasColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsF2Null() {
-                return this.IsNull(this._tableMunka1_.F2Column);
+            public string ISBN_tananyag {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.ISBN_tananyagColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ISBN_tananyag\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.ISBN_tananyagColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetF2Null() {
-                this[this._tableMunka1_.F2Column] = global::System.Convert.DBNull;
+            public string Formatum {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.FormatumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Formatum\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.FormatumColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsF3Null() {
-                return this.IsNull(this._tableMunka1_.F3Column);
+            public string Aktivitas {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.AktivitasColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Aktivitas\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.AktivitasColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetF3Null() {
-                this[this._tableMunka1_.F3Column] = global::System.Convert.DBNull;
+            public string Granturi {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.GranturiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Granturi\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.GranturiColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsF4Null() {
-                return this.IsNull(this._tableMunka1_.F4Column);
+            public string Rendezvenyek {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.RendezvenyekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rendezvenyek\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.RendezvenyekColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetF4Null() {
-                this[this._tableMunka1_.F4Column] = global::System.Convert.DBNull;
+            public string Manifestari {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.ManifestariColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Manifestari\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.ManifestariColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Graduri_de_promovare {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.Graduri_de_promovareColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Graduri_de_promovare\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.Graduri_de_promovareColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Programe_de_studii {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.Programe_de_studiiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Programe_de_studii\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.Programe_de_studiiColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Gradul_de_multumire {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdattipus.Gradul_de_multumireColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Gradul_de_multumire\' in table \'Adattipus\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdattipus.Gradul_de_multumireColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSzakokNull() {
+                return this.IsNull(this.tableAdattipus.SzakokColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSzakokNull() {
+                this[this.tableAdattipus.SzakokColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTanarCimNull() {
+                return this.IsNull(this.tableAdattipus.TanarCimColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTanarCimNull() {
+                this[this.tableAdattipus.TanarCimColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSzakAllapotNull() {
+                return this.IsNull(this.tableAdattipus.SzakAllapotColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSzakAllapotNull() {
+                this[this.tableAdattipus.SzakAllapotColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTanarFizetesNull() {
+                return this.IsNull(this.tableAdattipus.TanarFizetesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTanarFizetesNull() {
+                this[this.tableAdattipus.TanarFizetesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTanszekNull() {
+                return this.IsNull(this.tableAdattipus.TanszekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTanszekNull() {
+                this[this.tableAdattipus.TanszekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTanariAllasNull() {
+                return this.IsNull(this.tableAdattipus.TanariAllasColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTanariAllasNull() {
+                this[this.tableAdattipus.TanariAllasColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsISBN_tananyagNull() {
+                return this.IsNull(this.tableAdattipus.ISBN_tananyagColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetISBN_tananyagNull() {
+                this[this.tableAdattipus.ISBN_tananyagColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsFormatumNull() {
+                return this.IsNull(this.tableAdattipus.FormatumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetFormatumNull() {
+                this[this.tableAdattipus.FormatumColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAktivitasNull() {
+                return this.IsNull(this.tableAdattipus.AktivitasColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAktivitasNull() {
+                this[this.tableAdattipus.AktivitasColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGranturiNull() {
+                return this.IsNull(this.tableAdattipus.GranturiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGranturiNull() {
+                this[this.tableAdattipus.GranturiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsRendezvenyekNull() {
+                return this.IsNull(this.tableAdattipus.RendezvenyekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetRendezvenyekNull() {
+                this[this.tableAdattipus.RendezvenyekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsManifestariNull() {
+                return this.IsNull(this.tableAdattipus.ManifestariColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetManifestariNull() {
+                this[this.tableAdattipus.ManifestariColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGraduri_de_promovareNull() {
+                return this.IsNull(this.tableAdattipus.Graduri_de_promovareColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGraduri_de_promovareNull() {
+                this[this.tableAdattipus.Graduri_de_promovareColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPrograme_de_studiiNull() {
+                return this.IsNull(this.tableAdattipus.Programe_de_studiiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPrograme_de_studiiNull() {
+                this[this.tableAdattipus.Programe_de_studiiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGradul_de_multumireNull() {
+                return this.IsNull(this.tableAdattipus.Gradul_de_multumireColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGradul_de_multumireNull() {
+                this[this.tableAdattipus.Gradul_de_multumireColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -697,22 +1221,22 @@ namespace MVCLogin.RPTDatasets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class _Munka1_RowChangeEvent : global::System.EventArgs {
+        public class AdattipusRowChangeEvent : global::System.EventArgs {
             
-            private _Munka1_Row eventRow;
+            private AdattipusRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_RowChangeEvent(_Munka1_Row row, global::System.Data.DataRowAction action) {
+            public AdattipusRowChangeEvent(AdattipusRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public _Munka1_Row Row {
+            public AdattipusRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -740,7 +1264,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Munka1_TableAdapter : global::System.ComponentModel.Component {
+    public partial class AdattipusTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -754,7 +1278,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Munka1_TableAdapter() {
+        public AdattipusTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -851,20 +1375,70 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Munka1$";
-            tableMapping.ColumnMappings.Add("F1", "F1");
-            tableMapping.ColumnMappings.Add("F2", "F2");
-            tableMapping.ColumnMappings.Add("F3", "F3");
-            tableMapping.ColumnMappings.Add("F4", "F4");
+            tableMapping.DataSetTable = "Adattipus";
+            tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.ColumnMappings.Add("Szakok", "Szakok");
+            tableMapping.ColumnMappings.Add("TanarCim", "TanarCim");
+            tableMapping.ColumnMappings.Add("SzakAllapot", "SzakAllapot");
+            tableMapping.ColumnMappings.Add("TanarFizetes", "TanarFizetes");
+            tableMapping.ColumnMappings.Add("Tanszek", "Tanszek");
+            tableMapping.ColumnMappings.Add("TanariAllas", "TanariAllas");
+            tableMapping.ColumnMappings.Add("ISBN_tananyag", "ISBN_tananyag");
+            tableMapping.ColumnMappings.Add("Formatum", "Formatum");
+            tableMapping.ColumnMappings.Add("Aktivitas", "Aktivitas");
+            tableMapping.ColumnMappings.Add("Granturi", "Granturi");
+            tableMapping.ColumnMappings.Add("Rendezvenyek", "Rendezvenyek");
+            tableMapping.ColumnMappings.Add("Manifestari", "Manifestari");
+            tableMapping.ColumnMappings.Add("Graduri_de_promovare", "Graduri_de_promovare");
+            tableMapping.ColumnMappings.Add("Programe_de_studii", "Programe_de_studii");
+            tableMapping.ColumnMappings.Add("Gradul_de_multumire", "Gradul_de_multumire");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Adattipus] WHERE (([ID] = @Original_ID))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Munka1$] ([F1], [F2], [F3], [F4]) VALUES (@F1, @F2, @F3, @F4)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Adattipus] ([ID], [Szakok], [TanarCim], [SzakAllapot], [TanarFizetes], [Tanszek], [TanariAllas], [ISBN_tananyag], [Formatum], [Aktivitas], [Granturi], [Rendezvenyek], [Manifestari], [Graduri_de_promovare], [Programe_de_studii], [Gradul_de_multumire]) VALUES (@ID, @Szakok, @TanarCim, @SzakAllapot, @TanarFizetes, @Tanszek, @TanariAllas, @ISBN_tananyag, @Formatum, @Aktivitas, @Granturi, @Rendezvenyek, @Manifestari, @Graduri_de_promovare, @Programe_de_studii, @Gradul_de_multumire)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@F1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "F1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@F2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "F2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@F3", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "F3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@F4", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "F4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Szakok", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Szakok", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanarCim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanarCim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SzakAllapot", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SzakAllapot", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanarFizetes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanarFizetes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tanszek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tanszek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanariAllas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanariAllas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ISBN_tananyag", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ISBN_tananyag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Formatum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Formatum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Aktivitas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Aktivitas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Granturi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Granturi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rendezvenyek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rendezvenyek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Manifestari", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Manifestari", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Graduri_de_promovare", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Graduri_de_promovare", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Programe_de_studii", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Programe_de_studii", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gradul_de_multumire", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gradul_de_multumire", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Adattipus] SET [ID] = @ID, [Szakok] = @Szakok, [TanarCim] = @TanarCim, [SzakAllapot] = @SzakAllapot, [TanarFizetes] = @TanarFizetes, [Tanszek] = @Tanszek, [TanariAllas] = @TanariAllas, [ISBN_tananyag] = @ISBN_tananyag, [Formatum] = @Formatum, [Aktivitas] = @Aktivitas, [Granturi] = @Granturi, [Rendezvenyek] = @Rendezvenyek, [Manifestari] = @Manifestari, [Graduri_de_promovare] = @Graduri_de_promovare, [Programe_de_studii] = @Programe_de_studii, [Gradul_de_multumire] = @Gradul_de_multumire WHERE (([ID] = @Original_ID))";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Szakok", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Szakok", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanarCim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanarCim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SzakAllapot", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SzakAllapot", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanarFizetes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanarFizetes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tanszek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tanszek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TanariAllas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TanariAllas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ISBN_tananyag", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ISBN_tananyag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Formatum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Formatum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Aktivitas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Aktivitas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Granturi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Granturi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rendezvenyek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rendezvenyek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Manifestari", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Manifestari", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Graduri_de_promovare", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Graduri_de_promovare", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Programe_de_studii", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Programe_de_studii", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gradul_de_multumire", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gradul_de_multumire", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -880,7 +1454,9 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT F1, F2, F3, F4 FROM dbo.Munka1$";
+            this._commandCollection[0].CommandText = "SELECT ID, Szakok, TanarCim, SzakAllapot, TanarFizetes, Tanszek, TanariAllas, ISB" +
+                "N_tananyag, Formatum, Aktivitas, Granturi, Rendezvenyek, Manifestari, Graduri_de" +
+                "_promovare, Programe_de_studii, Gradul_de_multumire FROM dbo.Adattipus";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -888,7 +1464,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(MunkaDataSet._Munka1_DataTable dataTable) {
+        public virtual int Fill(MunkaDataSet.AdattipusDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -901,9 +1477,9 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual MunkaDataSet._Munka1_DataTable GetData() {
+        public virtual MunkaDataSet.AdattipusDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            MunkaDataSet._Munka1_DataTable dataTable = new MunkaDataSet._Munka1_DataTable();
+            MunkaDataSet.AdattipusDataTable dataTable = new MunkaDataSet.AdattipusDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -911,7 +1487,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MunkaDataSet._Munka1_DataTable dataTable) {
+        public virtual int Update(MunkaDataSet.AdattipusDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -919,7 +1495,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(MunkaDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Munka1$");
+            return this.Adapter.Update(dataSet, "Adattipus");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -940,31 +1516,136 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_ID) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string F1, string F2, string F3, global::System.Nullable<double> F4) {
-            if ((F1 == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(F1));
-            }
-            if ((F2 == null)) {
+        public virtual int Insert(
+                    int ID, 
+                    string Szakok, 
+                    string TanarCim, 
+                    string SzakAllapot, 
+                    string TanarFizetes, 
+                    string Tanszek, 
+                    string TanariAllas, 
+                    string ISBN_tananyag, 
+                    string Formatum, 
+                    string Aktivitas, 
+                    string Granturi, 
+                    string Rendezvenyek, 
+                    string Manifestari, 
+                    string Graduri_de_promovare, 
+                    string Programe_de_studii, 
+                    string Gradul_de_multumire) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID));
+            if ((Szakok == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(F2));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Szakok));
             }
-            if ((F3 == null)) {
+            if ((TanarCim == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(F3));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TanarCim));
             }
-            if ((F4.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((double)(F4.Value));
+            if ((SzakAllapot == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(SzakAllapot));
+            }
+            if ((TanarFizetes == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(TanarFizetes));
+            }
+            if ((Tanszek == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Tanszek));
+            }
+            if ((TanariAllas == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(TanariAllas));
+            }
+            if ((ISBN_tananyag == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(ISBN_tananyag));
+            }
+            if ((Formatum == null)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Formatum));
+            }
+            if ((Aktivitas == null)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Aktivitas));
+            }
+            if ((Granturi == null)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Granturi));
+            }
+            if ((Rendezvenyek == null)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Rendezvenyek));
+            }
+            if ((Manifestari == null)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Manifestari));
+            }
+            if ((Graduri_de_promovare == null)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Graduri_de_promovare));
+            }
+            if ((Programe_de_studii == null)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Programe_de_studii));
+            }
+            if ((Gradul_de_multumire == null)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(Gradul_de_multumire));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -981,6 +1662,160 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
                 }
             }
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int ID, 
+                    string Szakok, 
+                    string TanarCim, 
+                    string SzakAllapot, 
+                    string TanarFizetes, 
+                    string Tanszek, 
+                    string TanariAllas, 
+                    string ISBN_tananyag, 
+                    string Formatum, 
+                    string Aktivitas, 
+                    string Granturi, 
+                    string Rendezvenyek, 
+                    string Manifestari, 
+                    string Graduri_de_promovare, 
+                    string Programe_de_studii, 
+                    string Gradul_de_multumire, 
+                    int Original_ID) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID));
+            if ((Szakok == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Szakok));
+            }
+            if ((TanarCim == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TanarCim));
+            }
+            if ((SzakAllapot == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(SzakAllapot));
+            }
+            if ((TanarFizetes == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(TanarFizetes));
+            }
+            if ((Tanszek == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Tanszek));
+            }
+            if ((TanariAllas == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(TanariAllas));
+            }
+            if ((ISBN_tananyag == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(ISBN_tananyag));
+            }
+            if ((Formatum == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Formatum));
+            }
+            if ((Aktivitas == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Aktivitas));
+            }
+            if ((Granturi == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Granturi));
+            }
+            if ((Rendezvenyek == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Rendezvenyek));
+            }
+            if ((Manifestari == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Manifestari));
+            }
+            if ((Graduri_de_promovare == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Graduri_de_promovare));
+            }
+            if ((Programe_de_studii == null)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Programe_de_studii));
+            }
+            if ((Gradul_de_multumire == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Gradul_de_multumire));
+            }
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_ID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string Szakok, 
+                    string TanarCim, 
+                    string SzakAllapot, 
+                    string TanarFizetes, 
+                    string Tanszek, 
+                    string TanariAllas, 
+                    string ISBN_tananyag, 
+                    string Formatum, 
+                    string Aktivitas, 
+                    string Granturi, 
+                    string Rendezvenyek, 
+                    string Manifestari, 
+                    string Graduri_de_promovare, 
+                    string Programe_de_studii, 
+                    string Gradul_de_multumire, 
+                    int Original_ID) {
+            return this.Update(Original_ID, Szakok, TanarCim, SzakAllapot, TanarFizetes, Tanszek, TanariAllas, ISBN_tananyag, Formatum, Aktivitas, Granturi, Rendezvenyek, Manifestari, Graduri_de_promovare, Programe_de_studii, Gradul_de_multumire, Original_ID);
+        }
     }
     
     /// <summary>
@@ -995,7 +1830,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private Munka1_TableAdapter _munka1_TableAdapter;
+        private AdattipusTableAdapter _adattipusTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1017,12 +1852,12 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Munka1_TableAdapter Munka1_TableAdapter {
+        public AdattipusTableAdapter AdattipusTableAdapter {
             get {
-                return this._munka1_TableAdapter;
+                return this._adattipusTableAdapter;
             }
             set {
-                this._munka1_TableAdapter = value;
+                this._adattipusTableAdapter = value;
             }
         }
         
@@ -1045,9 +1880,9 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._munka1_TableAdapter != null) 
-                            && (this._munka1_TableAdapter.Connection != null))) {
-                    return this._munka1_TableAdapter.Connection;
+                if (((this._adattipusTableAdapter != null) 
+                            && (this._adattipusTableAdapter.Connection != null))) {
+                    return this._adattipusTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1062,7 +1897,7 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._munka1_TableAdapter != null)) {
+                if ((this._adattipusTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1076,12 +1911,12 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(MunkaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._munka1_TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet._Munka1_.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._adattipusTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Adattipus.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._munka1_TableAdapter.Update(updatedRows));
+                    result = (result + this._adattipusTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1095,11 +1930,11 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(MunkaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._munka1_TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet._Munka1_.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._adattipusTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Adattipus.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._munka1_TableAdapter.Update(addedRows));
+                    result = (result + this._adattipusTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1113,11 +1948,11 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(MunkaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._munka1_TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet._Munka1_.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._adattipusTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Adattipus.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._munka1_TableAdapter.Update(deletedRows));
+                    result = (result + this._adattipusTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1160,8 +1995,8 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._munka1_TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._munka1_TableAdapter.Connection) == false))) {
+            if (((this._adattipusTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._adattipusTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1197,13 +2032,13 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._munka1_TableAdapter != null)) {
-                    revertConnections.Add(this._munka1_TableAdapter, this._munka1_TableAdapter.Connection);
-                    this._munka1_TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._munka1_TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._munka1_TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._munka1_TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._munka1_TableAdapter.Adapter);
+                if ((this._adattipusTableAdapter != null)) {
+                    revertConnections.Add(this._adattipusTableAdapter, this._adattipusTableAdapter.Connection);
+                    this._adattipusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._adattipusTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._adattipusTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._adattipusTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._adattipusTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1264,9 +2099,9 @@ namespace MVCLogin.RPTDatasets.MunkaDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._munka1_TableAdapter != null)) {
-                    this._munka1_TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._munka1_TableAdapter]));
-                    this._munka1_TableAdapter.Transaction = null;
+                if ((this._adattipusTableAdapter != null)) {
+                    this._adattipusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._adattipusTableAdapter]));
+                    this._adattipusTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

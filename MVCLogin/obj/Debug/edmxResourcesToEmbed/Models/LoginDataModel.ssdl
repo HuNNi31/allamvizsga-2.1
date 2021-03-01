@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="minosegbiztositasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adattipus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Szakok" Type="nvarchar" MaxLength="50" />
+    <Property Name="TanarCim" Type="nvarchar" MaxLength="50" />
+    <Property Name="SzakAllapot" Type="nvarchar" MaxLength="50" />
+    <Property Name="TanarFizetes" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tanszek" Type="nvarchar" MaxLength="50" />
+    <Property Name="TanariAllas" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISBN_tananyag" Type="nvarchar" MaxLength="50" />
+    <Property Name="Formatum" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aktivitas" Type="nvarchar" MaxLength="50" />
+    <Property Name="Granturi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rendezvenyek" Type="nvarchar" MaxLength="50" />
+    <Property Name="Manifestari" Type="nvarchar" MaxLength="50" />
+    <Property Name="Graduri_de_promovare" Type="nvarchar" MaxLength="50" />
+    <Property Name="Programe_de_studii" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gradul_de_multumire" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Role">
     <Key>
       <PropertyRef Name="Id" />
@@ -8,14 +29,6 @@
     <Property Name="UserId" Type="int" Nullable="false" />
     <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="Tanar">
-          <Property Name="F1" Type="int" />
-          <Property Name="F2" Type="nvarchar" MaxLength="50" />
-          <Property Name="F3" Type="nvarchar" MaxLength="50" />
-          <Property Name="F4" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="UserID" />
@@ -37,6 +50,7 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="minosegbiztositasModelStoreContainer">
+    <EntitySet Name="Adattipus" EntityType="Self.Adattipus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Role_User" Association="Self.FK_Role_User">

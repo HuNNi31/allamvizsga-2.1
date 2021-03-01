@@ -23,12 +23,22 @@ namespace MVCLogin.Controllers
         {
             return View();
         }
+        public ActionResult Profil()
+        {
+            return View();
+        }
 
-        [Authorize(Roles = "Admin")]
+
         public ActionResult ToTanar()
         {
 
             return RedirectToAction("Tanar", "Home");
+            //return View("~/RDLC_ReportTutorial.aspx");
+        }
+        public ActionResult ToProfil()
+        {
+
+            return RedirectToAction("Profil", "Home");
             //return View("~/RDLC_ReportTutorial.aspx");
         }
 

@@ -1,23 +1,15 @@
 ﻿
-@{
-    Layout = null;
-    if (Session["userID"] == null)
-    {
-        Response.Redirect("~/Login/Index");
-    }
-}
 
-<!DOCTYPE html>
 
-<html>
-<head>
 
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+
+
+
+  
+    
     <style>
         body {
             background-color: #76b852;
-            
         }
         /* Add a black background color to the top navigation */
         .topnav {
@@ -46,21 +38,19 @@
                     background-color: darkred;
                     color: white;
                 }
-                .topnav a.last{
-                    float:right;
+
+                .topnav a.last {
+                    float: right;
                 }
-                
     </style>
-</head>
-<body>
+
     <div>
         <h1>Dashboard</h1>
         <h3>Hello, @Session["userName"].ToString()!</h3>
         <div class="topnav">
             <a class="active" href="@Url.Action("Index","Home")">Home</a>
 
-            <!--ASPX linkek-->
-            <a runat="server" href="~/RDLC_ReportTutorial.aspx">ToReport1</a>
+            <a runat="server" href="~/RDLC_ReportTutorial.aspx">AdattipusokRDLC</a>
             <a runat="server" href="~/Adattipus.aspx">AdattipusokRDLC</a>
             <a runat="server" href="~/Default.aspx">TanarTablazat</a>
 
@@ -69,16 +59,7 @@
             <a class="last" href="@Url.Action("ToProfil","Home")">Profile</a>
 
 
-            @*<a class="active" href="@Url.Action("Index","Home")">Home</a>
 
-        <a href="@Url.Action("ToReport","Report")">ToReport</a>
-        <a href="@Url.Action("ToReport1","Report")">AdattipusokRDLC</a>
-        <a href="@Url.Action("ToTanar","Home")">TanarTablazat</a>
-
-        <a class="last" href="@Url.Action("LogOut","Login")">Log Out</a>
-        <a class="last" href="@Url.Action("LogOut","Login")">Profile</a>*@
 
         </div>
     </div>
-</body>
-</html>

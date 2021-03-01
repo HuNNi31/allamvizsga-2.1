@@ -10,67 +10,143 @@
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
     <style>
-        #login-div {
-            position: absolute;
-            left: 40%;
-            top: 40%;
-            border: 1px solid #ccc;
-            padding: 10px 10px;
+        body {
+            background: #76b852;
+            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+            background: -moz-linear-gradient(right, #76b852, #8DC26F);
+            background: -o-linear-gradient(right, #76b852, #8DC26F);
+            background: linear-gradient(to left, #76b852, #8DC26F);
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .login-div {
+            width: 360px;
+            padding: 8% 0 0;
+            margin: auto;
         }
 
         .field-validation-error {
             color: red;
+            font-family: "Roboto", sans-serif;
         }
+        .button {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            border: 0;
+            padding: 50px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+            .form input {
+                font-family: "Roboto", sans-serif;
+                outline: 0;
+                background: #76b852;
+                width: 100%;
+                border: 0;
+                margin: 0 0 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+
+            .form button {
+                font-family: "Roboto", sans-serif;
+                text-transform: uppercase;
+                outline: 0;
+                background: #4CAF50;
+                width: 100%;
+                border: 0;
+                padding: 15px;
+                color: #FFFFFF;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .form button:hover, .form button:active, .form button:focus {
+                    background: #43A047;
+            }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body>
-    <div id="login-div">
-        @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
-        {
-            <table>
-                <tr>
-                    <td></td>
-                    <td style="text-decoration:underline">Belépés</td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.UserName)
-                    </td>
-                    <td>
-                        @Html.EditorFor(model => model.UserName)
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>@Html.ValidationMessageFor(model => model.UserName)</td>
-                </tr>
+    <div class="login-div">
+        <div class="form">
 
-                <tr>
-                    <td>@Html.LabelFor(model => model.Password)</td>
-                    <td>@Html.EditorFor(model => model.Password)</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>@Html.ValidationMessageFor(model => model.Password)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" name="name" value="Logiin" />
-                        <input type="reset" name="name" value="Clear" />
-                    </td>
-                </tr>
-            </table>
-        }
+            @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
+            {
+                <table>
+                    @*<tr>
+                        
+                        <td style="text-decoration:underline">Log in</td>
+                    </tr>*@
+                    <tr>
+                     
+                       
+                            <input type="text" placeholder="username"  @Html.EditorFor(model => model.UserName)
+                       
+                    </tr>
+                    <tr>
+                        
+                        @Html.ValidationMessageFor(model => model.UserName)
+                    </tr>
+
+                    <tr>
+                       
+                       
+                            <input type="password" placeholder="password"@Html.EditorFor(model => model.Password) 
+                        
+                    </tr>
+                    <tr>
+                       
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            <td>
+                                <input class="button" type="submit" name="name" value="Login" />
+                            </td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            <td>
+                                
+                                <input class="button" type="reset" name="name" value="Clear" />
+                            </td>
+                        
+                    </tr>
+                </table>
+            }
+
+        </div>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 
     </div>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>

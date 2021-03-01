@@ -7,6 +7,7 @@
       <End Role="User" EntitySet="Users" />
       <End Role="Role" EntitySet="Roles" />
     </AssociationSet>
+    <EntitySet Name="Adattipus" EntityType="minosegbiztositasModel.Adattipus" />
   </EntityContainer>
   <EntityType Name="Role">
     <Key>
@@ -38,4 +39,25 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Adattipus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Szakok" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TanarCim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SzakAllapot" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TanarFizetes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tanszek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TanariAllas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN_tananyag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Formatum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aktivitas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Granturi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rendezvenyek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Manifestari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Graduri_de_promovare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Programe_de_studii" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gradul_de_multumire" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

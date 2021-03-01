@@ -5,6 +5,27 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="minosegbiztositasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Adattipus">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Szakok" Type="nvarchar" MaxLength="50" />
+          <Property Name="TanarCim" Type="nvarchar" MaxLength="50" />
+          <Property Name="SzakAllapot" Type="nvarchar" MaxLength="50" />
+          <Property Name="TanarFizetes" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tanszek" Type="nvarchar" MaxLength="50" />
+          <Property Name="TanariAllas" Type="nvarchar" MaxLength="50" />
+          <Property Name="ISBN_tananyag" Type="nvarchar" MaxLength="50" />
+          <Property Name="Formatum" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aktivitas" Type="nvarchar" MaxLength="50" />
+          <Property Name="Granturi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rendezvenyek" Type="nvarchar" MaxLength="50" />
+          <Property Name="Manifestari" Type="nvarchar" MaxLength="50" />
+          <Property Name="Graduri_de_promovare" Type="nvarchar" MaxLength="50" />
+          <Property Name="Programe_de_studii" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gradul_de_multumire" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="Id" />
@@ -13,14 +34,6 @@
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="Tanar">
-          <Property Name="F1" Type="int" />
-          <Property Name="F2" Type="nvarchar" MaxLength="50" />
-          <Property Name="F3" Type="nvarchar" MaxLength="50" />
-          <Property Name="F4" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="UserID" />
@@ -42,6 +55,7 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="minosegbiztositasModelStoreContainer">
+          <EntitySet Name="Adattipus" EntityType="Self.Adattipus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Role_User" Association="Self.FK_Role_User">
@@ -60,6 +74,7 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
             <End Role="User" EntitySet="Users" />
             <End Role="Role" EntitySet="Roles" />
           </AssociationSet>
+          <EntitySet Name="Adattipus" EntityType="minosegbiztositasModel.Adattipus" />
         </EntityContainer>
         <EntityType Name="Role">
           <Key>
@@ -91,6 +106,27 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Adattipus">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Szakok" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TanarCim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SzakAllapot" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TanarFizetes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tanszek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TanariAllas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISBN_tananyag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Formatum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aktivitas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Granturi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rendezvenyek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Manifestari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Graduri_de_promovare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Programe_de_studii" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gradul_de_multumire" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -115,6 +151,28 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Adattipus">
+            <EntityTypeMapping TypeName="minosegbiztositasModel.Adattipus">
+              <MappingFragment StoreEntitySet="Adattipus">
+                <ScalarProperty Name="Gradul_de_multumire" ColumnName="Gradul_de_multumire" />
+                <ScalarProperty Name="Programe_de_studii" ColumnName="Programe_de_studii" />
+                <ScalarProperty Name="Graduri_de_promovare" ColumnName="Graduri_de_promovare" />
+                <ScalarProperty Name="Manifestari" ColumnName="Manifestari" />
+                <ScalarProperty Name="Rendezvenyek" ColumnName="Rendezvenyek" />
+                <ScalarProperty Name="Granturi" ColumnName="Granturi" />
+                <ScalarProperty Name="Aktivitas" ColumnName="Aktivitas" />
+                <ScalarProperty Name="Formatum" ColumnName="Formatum" />
+                <ScalarProperty Name="ISBN_tananyag" ColumnName="ISBN_tananyag" />
+                <ScalarProperty Name="TanariAllas" ColumnName="TanariAllas" />
+                <ScalarProperty Name="Tanszek" ColumnName="Tanszek" />
+                <ScalarProperty Name="TanarFizetes" ColumnName="TanarFizetes" />
+                <ScalarProperty Name="SzakAllapot" ColumnName="SzakAllapot" />
+                <ScalarProperty Name="TanarCim" ColumnName="TanarCim" />
+                <ScalarProperty Name="Szakok" ColumnName="Szakok" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -129,8 +187,8 @@ warning 6013: The table/view 'minosegbiztositas.dbo.Tanar' does not have a prima
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
