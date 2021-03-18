@@ -212,7 +212,6 @@ D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-mai
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\bin\System.Web.WebPages.xml
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\bin\System.Web.WebPages.Deployment.xml
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\bin\System.Web.WebPages.Razor.xml
-D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\obj\Debug\MVCLogin.csprojAssemblyReference.cache
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\obj\Debug\RdlCompile.cache
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\obj\Debug\RdlCompile.compiled
 D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\obj\Debug\MVCLogin.csproj.CoreCompileInputs.cache

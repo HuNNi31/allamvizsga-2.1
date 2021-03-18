@@ -9,7 +9,7 @@
     <title></title>
         <style>
         body {
-            background: #76b852;
+            background: #256E43;
         }
             /* Add a black background color to the top navigation */
         .topnav {
@@ -71,7 +71,7 @@
         <div style="height: 196px">
         <asp:Panel ID="Panel1" runat="server">
             <asp:ScriptManager ID="ScriptManager1" runat="server">   </asp:ScriptManager>
-            <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="922px">
+            <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="100%">
               <%--  <LocalReport ReportEmbeddedResource="MVCLogin.ReportUni.rdlc">
                     <DataSources>
                         <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="DataSet2" />

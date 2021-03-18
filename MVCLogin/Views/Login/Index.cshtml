@@ -9,17 +9,23 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
     <style>
         body {
-            background: #76b852;
-            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-            background: -moz-linear-gradient(right, #76b852, #8DC26F);
-            background: -o-linear-gradient(right, #76b852, #8DC26F);
-            background: linear-gradient(to left, #76b852, #8DC26F);
+            background: #256E43;
+            background: -webkit-linear-gradient(right, #256E43, #8DC26F);
+            background: -moz-linear-gradient(right, #256E43, #8DC26F);
+            background: -o-linear-gradient(right, #256E43, #8DC26F);
+            background: linear-gradient(to left, #256E43, #8DC26F);
             font-family: "Roboto", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
+
         .login-div {
             width: 360px;
             padding: 8% 0 0;
@@ -30,11 +36,12 @@
             color: red;
             font-family: "Roboto", sans-serif;
         }
+
         .button {
             font-family: "Roboto", sans-serif;
             text-transform: uppercase;
             outline: 0;
-            background: #4CAF50;
+            background: #256E43;
             width: 100%;
             border: 0;
             padding: 50px;
@@ -53,6 +60,7 @@
             text-align: center;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         }
+
             .form input {
                 font-family: "Roboto", sans-serif;
                 outline: 0;
@@ -78,16 +86,16 @@
                 cursor: pointer;
             }
 
-            .form button:hover, .form button:active, .form button:focus {
+                .form button:hover, .form button:active, .form button:focus {
                     background: #43A047;
-            }
+                }
+
         .container {
             position: relative;
             z-index: 1;
             max-width: 300px;
             margin: 0 auto;
         }
-
     </style>
 </head>
 <body>
@@ -128,11 +136,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                             <td>
                                 <input class="button" type="submit" name="name" value="Login" />
                             </td>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                             <td>
                                 
                                 <input class="button" type="reset" name="name" value="Clear" />

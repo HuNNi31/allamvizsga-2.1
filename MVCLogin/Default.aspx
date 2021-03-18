@@ -7,7 +7,7 @@
     <title></title>
     <style>
         body {
-            background: #76b852;
+            background: #256E43;
         }
             /* Add a black background color to the top navigation */
         .topnav {
