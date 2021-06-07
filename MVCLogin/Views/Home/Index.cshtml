@@ -6,6 +6,9 @@
         Response.Redirect("~/Login/Index");
     }
 }
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 <!DOCTYPE html>
 
@@ -13,104 +16,47 @@
 <head>
 
 
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
 
-    @*<meta name="viewport" content="width=device-width" />*@
-    
-    <link rel="stylesheet"  href="styles.css">
-    <style>
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
 
-
-        body {
-            background-color: #256E43;
-        }
-            /* Add a black background color to the top navigation*/
-            .topnav {
-                background-color: #333;
-                overflow: hidden;
-            }
-
-                 /*Style the links inside the navigation bar*/
-                .topnav a {
-                    float: left;
-                    color: #f2f2f2;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-size: 17px;
-                }
-
-                     /*Change the color of links on hover*/
-                    .topnav a:hover {
-                        background-color: #ddd;
-                        color: black;
-                    }
-
-                  /*   Add a color to the active/current link*/
-                    .topnav a.active {
-                        background-color: darkred;
-                        color: white;
-                    }
-
-                    .topnav a.last {
-                        float: right;
-                    }
-
-        .form {
-            position: relative;
-            z-index: 1;
-            background: #FFFFFF;
-            max-width: 360px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-        p {
-            align-content:baseline;
-        }
-        h3{
-            text-align:right;
-        }
-
-        h1 {
-            text-align:center;
-        }
-        </style>
 </head>
-<body class="index">
-    <div>
+<body>
+    <h3 class="hellotext">Hello, @Session["userName"].ToString()!</h3>
+
+    <div class="form1">
+
         <h1>Dashboard</h1>
-        <h3>Hello, @Session["userName"].ToString()!</h3>
-        <div class="topnav">
-            <a class="active" href="@Url.Action("Index","Home")">Home</a>
 
-            <!--ASPX linkek-->
-            <a runat="server" href="~/RDLC_ReportTutorial.aspx">ToReport1</a>
-            <a runat="server" href="~/Adattipus.aspx">AdattipusokRDLC</a>
-            <a runat="server" href="~/Default.aspx">TanarTablazat</a>
+        <form class="form">
 
 
-            <a class="last" href="@Url.Action("LogOut","Login")">Log Out</a>
-            <a class="last" href="@Url.Action("ToProfil","Home")">Profile</a>
+            <p>THIS IS HOME </p>
+            
 
+        </form>
 
-            @*<a class="active" href="@Url.Action("Index","Home")">Home</a>
-
-                <a href="@Url.Action("ToReport","Report")">ToReport</a>
-                <a href="@Url.Action("ToReport1","Report")">AdattipusokRDLC</a>
-                <a href="@Url.Action("ToTanar","Home")">TanarTablazat</a>
-
-                <a class="last" href="@Url.Action("LogOut","Login")">Log Out</a>
-                <a class="last" href="@Url.Action("LogOut","Login")">Profile</a>*@
-
-        </div>
     </div>
-    <form class="form">
-   
-
-                <p>THIS IS HOME </p>
- 
     
-    </form>
+ 
+
+
+        <div id="spare">
+            
+            <img src="~/Images/kep.jpg" alt="kep" >
+        </div>
+ 
+
+    @*<footer class="border-top footer text-white">
+
+                <p>&copy; @DateTime.Now.Year - Csegzi Hunor </p>
+
+        </footer>*@
+
 </body>
 </html>

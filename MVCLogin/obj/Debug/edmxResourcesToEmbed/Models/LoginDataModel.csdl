@@ -47,7 +47,6 @@
     <Property Name="Szakok" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="TanarCim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="SzakAllapot" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="TanarFizetes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Tanszek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="TanariAllas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ISBN_tananyag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -59,5 +58,6 @@
     <Property Name="Graduri_de_promovare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Programe_de_studii" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Gradul_de_multumire" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TanarNev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

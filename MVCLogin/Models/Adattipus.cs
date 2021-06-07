@@ -18,7 +18,6 @@ namespace MVCLogin.Models
         public string Szakok { get; set; }
         public string TanarCim { get; set; }
         public string SzakAllapot { get; set; }
-        public string TanarFizetes { get; set; }
         public string Tanszek { get; set; }
         public string TanariAllas { get; set; }
         public string ISBN_tananyag { get; set; }
@@ -30,5 +29,6 @@ namespace MVCLogin.Models
         public string Graduri_de_promovare { get; set; }
         public string Programe_de_studii { get; set; }
         public string Gradul_de_multumire { get; set; }
+        public string TanarNev { get; set; }
     }
 }

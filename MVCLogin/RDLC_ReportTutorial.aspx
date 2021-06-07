@@ -6,69 +6,69 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-        <style>
-        body {
-            background: #256E43;
-        }
-            /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-                /* Change the color of links on hover */
-                .topnav a:hover {
-                    background-color: #ddd;
-                    color: black;
-                }
-
-                /* Add a color to the active/current link */
-                .topnav a.active {
-                    background-color: darkred;
-                    color: white;
-                }
-                .topnav a.last{
-                    float:right;
-                }
-         .table {
-              margin-left: auto;
-              margin-right: auto;
-         }
-    </style>
+        <title runat="server">Users</title>
+          <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+          <link rel="stylesheet" type="text/css" href="~/Content/table_style.css" />
+     <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
 </head>
 <body>
 
-             <div>
-        <h1>Dashboard</h1>
-       
-        <div class="topnav">
+                    <header>
+            
+             <div class="container">
 
-            <a class="active" runat="server" href="~/Home/Index">Home</a>
-                <!--ASPX linkek-->
-                <a runat="server" href="~/RDLC_ReportTutorial.aspx">ToReport1</a>
-                <a runat="server" href="~/Adattipus.aspx">AdattipusokRDLC</a>
-                <a runat="server" href="~/Default.aspx">TanarTablazat</a>
-                <!--ASPX linkek vége-->
-            <a class="last" runat="server" href="~/Home/Index">Back</a>
-            <a class="last" runat="server" href="~/Home/Profil">Profil</a>
-     
 
+            <nav>
+
+                <ul>
+
+                    <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
+
+                    <!--ASPX linkek-->
+                    <li>
+                        <a runat="server" href="~/RDLC_ReportTutorial.aspx">Users</a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Adattipus.aspx">Adattipusok</a>
+                    </li>
+
+                    <li> <a href="#">Tablazatok</a>
+                        
+                        <ul class="dropdown">
+                            
+                            <li><a runat="server" href="~/Default.aspx">TanarTablazat</a> </li>
+                            <li><a runat="server" href="~/Default.aspx">Szakok</a> </li>
+                            <li><a runat="server" href="~/Default.aspx">TanarTablazat</a> </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Import/Index">Import</a>
+                    </li>
+
+                    <li>
+                        <a runat="server" href="~/Home/Profil">Profil</a>
+                    </li>
+                    
+                    <li >
+                       
+                         <a runat="server" href="~/Login/Index">Log Out</a>
+    
+                           
+                    </li>
+                    
+                </ul>
+            </nav>
         </div>
-    </div>
+        </header>
+  
 
     <form id="form1" runat="server">
-        <div style="height: 196px">
+        <div >
         <asp:Panel ID="Panel1" runat="server">
             <asp:ScriptManager ID="ScriptManager1" runat="server">   </asp:ScriptManager>
             <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="100%">
@@ -80,7 +80,10 @@
             </rsweb:ReportViewer>
            <%-- <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="userDataSetTableAdapters.LoginABTableAdapter"></asp:ObjectDataSource>--%>
               </asp:Panel>
+           
         </div>
+         <hr />
     </form>
+    
 </body>
 </html>

@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2> Excel Import</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <input name="file" type="file" required />
+                <button type="submit">Import</button>
+                <asp:Button ID="insertdata" runat="server" Text="Upload Excel to DB" OnClick="insertdata_Click" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

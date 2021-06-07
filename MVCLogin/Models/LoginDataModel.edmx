@@ -4,47 +4,47 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="minosegbiztositasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Alias="Self" Namespace="minosegbiztositasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012">
         <EntityType Name="Adattipus">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
-          <Property Name="Szakok" Type="nvarchar" MaxLength="50" />
-          <Property Name="TanarCim" Type="nvarchar" MaxLength="50" />
-          <Property Name="SzakAllapot" Type="nvarchar" MaxLength="50" />
-          <Property Name="TanarFizetes" Type="nvarchar" MaxLength="50" />
-          <Property Name="Tanszek" Type="nvarchar" MaxLength="50" />
-          <Property Name="TanariAllas" Type="nvarchar" MaxLength="50" />
-          <Property Name="ISBN_tananyag" Type="nvarchar" MaxLength="50" />
-          <Property Name="Formatum" Type="nvarchar" MaxLength="50" />
-          <Property Name="Aktivitas" Type="nvarchar" MaxLength="50" />
-          <Property Name="Granturi" Type="nvarchar" MaxLength="50" />
-          <Property Name="Rendezvenyek" Type="nvarchar" MaxLength="50" />
-          <Property Name="Manifestari" Type="nvarchar" MaxLength="50" />
-          <Property Name="Graduri_de_promovare" Type="nvarchar" MaxLength="50" />
-          <Property Name="Programe_de_studii" Type="nvarchar" MaxLength="50" />
-          <Property Name="Gradul_de_multumire" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID" Nullable="false" Type="int" />
+          <Property Name="Szakok" MaxLength="50" Type="nvarchar" />
+          <Property Name="TanarCim" MaxLength="50" Type="nvarchar" />
+          <Property Name="TanarNev" MaxLength="50" Type="nvarchar" />
+          <Property Name="SzakAllapot" MaxLength="50" Type="nvarchar" />
+          <Property Name="Tanszek" MaxLength="50" Type="nvarchar" />
+          <Property Name="TanariAllas" MaxLength="50" Type="nvarchar" />
+          <Property Name="ISBN_tananyag" MaxLength="50" Type="nvarchar" />
+          <Property Name="Formatum" MaxLength="50" Type="nvarchar" />
+          <Property Name="Aktivitas" MaxLength="50" Type="nvarchar" />
+          <Property Name="Granturi" MaxLength="50" Type="nvarchar" />
+          <Property Name="Rendezvenyek" MaxLength="50" Type="nvarchar" />
+          <Property Name="Manifestari" MaxLength="50" Type="nvarchar" />
+          <Property Name="Graduri_de_promovare" MaxLength="50" Type="nvarchar" />
+          <Property Name="Programe_de_studii" MaxLength="50" Type="nvarchar" />
+          <Property Name="Gradul_de_multumire" MaxLength="50" Type="nvarchar" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UserId" Type="int" Nullable="false" />
-          <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="UserId" Nullable="false" Type="int" />
+          <Property Name="Role" Nullable="false" MaxLength="50" Type="nvarchar" />
         </EntityType>
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="UserID" />
           </Key>
-          <Property Name="UserID" Type="int" Nullable="false" />
-          <Property Name="UserName" Type="nchar" MaxLength="50" Nullable="false" />
-          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserID" Nullable="false" Type="int" />
+          <Property Name="UserName" Nullable="false" MaxLength="50" Type="nchar" />
+          <Property Name="Password" Nullable="false" MaxLength="50" Type="nvarchar" />
         </EntityType>
         <Association Name="FK_Role_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
-          <End Role="Role" Type="Self.Role" Multiplicity="*" />
+          <End Type="Self.User" Multiplicity="1" Role="User" />
+          <End Type="Self.Role" Multiplicity="*" Role="Role" />
           <ReferentialConstraint>
             <Principal Role="User">
               <PropertyRef Name="UserID" />
@@ -59,8 +59,8 @@
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Role_User" Association="Self.FK_Role_User">
-            <End Role="User" EntitySet="User" />
-            <End Role="Role" EntitySet="Role" />
+            <End EntitySet="User" Role="User" />
+            <End EntitySet="Role" Role="Role" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -114,7 +114,6 @@
           <Property Name="Szakok" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TanarCim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="SzakAllapot" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="TanarFizetes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Tanszek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TanariAllas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ISBN_tananyag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -126,6 +125,7 @@
           <Property Name="Graduri_de_promovare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Programe_de_studii" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Gradul_de_multumire" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TanarNev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -154,6 +154,7 @@
           <EntitySetMapping Name="Adattipus">
             <EntityTypeMapping TypeName="minosegbiztositasModel.Adattipus">
               <MappingFragment StoreEntitySet="Adattipus">
+                <ScalarProperty Name="TanarNev" ColumnName="TanarNev" />
                 <ScalarProperty Name="Gradul_de_multumire" ColumnName="Gradul_de_multumire" />
                 <ScalarProperty Name="Programe_de_studii" ColumnName="Programe_de_studii" />
                 <ScalarProperty Name="Graduri_de_promovare" ColumnName="Graduri_de_promovare" />
@@ -165,7 +166,6 @@
                 <ScalarProperty Name="ISBN_tananyag" ColumnName="ISBN_tananyag" />
                 <ScalarProperty Name="TanariAllas" ColumnName="TanariAllas" />
                 <ScalarProperty Name="Tanszek" ColumnName="Tanszek" />
-                <ScalarProperty Name="TanarFizetes" ColumnName="TanarFizetes" />
                 <ScalarProperty Name="SzakAllapot" ColumnName="SzakAllapot" />
                 <ScalarProperty Name="TanarCim" ColumnName="TanarCim" />
                 <ScalarProperty Name="Szakok" ColumnName="Szakok" />

@@ -4,34 +4,70 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Allamvizsga </title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-                
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
-    </div>
+    <header>
+
+
+            <nav>
+                <div>
+                    <ul>
+
+                        <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
+
+                        <!--ASPX linkek-->
+                        <li>
+                            <a runat="server" href="~/RDLC_ReportTutorial.aspx">Users</a>
+                        </li>
+                        <li>
+                            <a runat="server" href="~/Adattipus.aspx">Adattipusok</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Tablazatok</a>
+
+                            <ul class="dropdown">
+
+                                <li><a runat="server" href="~/Default.aspx">TanarTablazat</a> </li>
+                                <li><a runat="server" href="~/szakok.aspx"> Szakok</a> </li>
+                                <li><a runat="server" href="~/egyetem.aspx"> Egyetem</a> </li>
+                                <li><a runat="server" href="~/egyetem.aspx"> Egyetem2</a> </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a runat="server" href="~/Import/Index">Import</a>
+                        </li>
+
+                        <li>
+                            <a runat="server" href="~/Home/Profil">Profil</a>
+                        </li>
+
+                        <li class="last">
+
+                            <a runat="server" href="~/Login/Index">Log Out</a>
+
+
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+      
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+    </header>
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year -Allamvizsga</p>
+        
+        <footer class="border-top footer text-white">
+            <div class="footer">
+                &copy; @DateTime.Now.Year - Csegzi Hunor 
+            </div>
         </footer>
     </div>
 

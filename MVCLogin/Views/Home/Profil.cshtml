@@ -6,146 +6,106 @@
         Response.Redirect("~/Login/Index");
     }
 }
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 <!DOCTYPE html>
 
 <html>
 <head>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="~/Views/Home/styles.css" />
-    @*<style>
-        body {
-            background: #256E43;
-        }
-        /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-                /* Change the color of links on hover */
-                .topnav a:hover {
-                    background-color: #ddd;
-                    color: black;
-                }
-
-                /* Add a color to the active/current link */
-                .topnav a.active {
-                    background-color: darkred;
-                    color: white;
-                }
-
-                .topnav a.last {
-                    float: right;
-                }
-    </style>*@
 </head>
 <body>
 
 
 
-    <div id="navigation">
-        <div>
-            <h1>Dashboard</h1>
-
-            <div class="topnav">
-                <a class="active" runat="server" href="~/Home/Index">Home</a>
-                <!--ASPX linkek-->
-                <a runat="server" href="~/RDLC_ReportTutorial.aspx">ToReport1</a>
-                <a runat="server" href="~/Adattipus.aspx">AdattipusokRDLC</a>
-                <a runat="server" href="~/Default.aspx">TanarTablazat</a>
-                <!--ASPX linkek vége-->
-                <a class="last" runat="server" href="~/Home/Index">Back</a>
-                <a class="last" runat="server" href="~/Home/Profil">Profil</a>
-                @*<form method="get" action="Home/Tanar">
-                        <button type="submit">Continue</button>
-                    </form>*@
-
-            </div>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td>
-                            Username
-                        </td>
-                        <td>
-                            @Session["userName"].ToString()
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Teljes név
-                        </td>
-                        <td>
-                            Nincs fűrészpór
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Regisztrált</td>
-                        <td>2021-01-24 19:36:23</td>
-                    </tr>
-                    <tr>
-                        <td>Utoljára itt járt</td>
-                        <td>2021-03-01 11:10:31</td>
-                    </tr>
+    <!--Navigation bar-->
 
 
-                    <tr>
-                        <td>Email cím</td>
-                        <td> nincs@yahoo.com</td>
-                    </tr>
+    <!--end of Navigation bar-->
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    Username
+                </td>
+                <td> @Session["userName"].ToString()</td>
+                <td>
+                    @*@Session["userName"].ToString()*@
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Teljes név
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>Regisztrált</td>
+                <td>2021-01-24 19:36:23</td>
+            </tr>
+            <tr>
+                <td>Utoljára itt járt</td>
+                <td>@DateTime.Now</td>
+            </tr>
 
 
-                    <tr>
-                        <td>IP cím</td>
-                        <td>
-                            <a href="http://whatismyipaddress.com/ip/2a02:2f07:d60c:1400:c405:158b:7ff1:6445" target="_blank" style="text-decoration:none;">IP Cím</a>
-                        </td>
-                    </tr>
+            <tr>
+                <td>Email cím</td>
+                <td> nincs@yahoo.com</td>
+            </tr>
 
-                    <tr>
-                        <td>Meghívta</td>
-                        <td>
-                            Rendszer
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td>Aktuális sebesség</td>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Fel:</td>
-                                        <td>0.00 kB/s</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Le:</td>
-                                        <td>0.00 kB/s</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
+            <tr>
+                <td>IP cím</td>
+                <td>
+                    <a href="http://whatismyipaddress.com/ip/2a02:2f07:d60c:1400:c405:158b:7ff1:6445" target="_blank" style="text-decoration:none;">IP Cím</a>
+                </td>
+            </tr>
 
-                </tbody>
-            </table>
-        </div>
+            <tr>
+                <td>Meghívta</td>
+                <td>
+                    Rendszer
+                </td>
+            </tr>
 
+            <tr>
+                <td>Aktuális sebesség</td>
+                <td>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Fel:</td>
+                                <td>0.00 kB/s</td>
+                            </tr>
+                            <tr>
+                                <td>Le:</td>
+                                <td>0.00 kB/s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
+
 </html>

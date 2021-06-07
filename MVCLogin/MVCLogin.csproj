@@ -56,6 +56,10 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -122,12 +126,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\evo-calendar.orange-coral.css" />
+    <Content Include="Content\login_style.css" />
+    <Content Include="Content\table_style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\addnew.png" />
     <Content Include="Images\cancel.png" />
     <Content Include="Images\delete.png" />
     <Content Include="Images\edit.png" />
+    <Content Include="Images\kep.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Images\save.png" />
     <Content Include="Models\LoginDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -153,6 +162,39 @@
     </EntityDeploy>
     <Content Include="Models\LoginDataModel.edmx.diagram">
       <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ReportDataSets\AdattipusTable.xsc">
+      <DependentUpon>AdattipusTable.xsd</DependentUpon>
+    </Content>
+    <Content Include="minosegbiztositasDataSet.xsc">
+      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="mbDataSet.xsc">
+      <DependentUpon>mbDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="mbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="mbDataSet.xss">
+      <DependentUpon>mbDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="minosegbiztositasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>minosegbiztositasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="minosegbiztositasDataSet.xss">
+      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="ReportDataSets\AdattipusTable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdattipusTable.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ReportDataSets\AdattipusTable.xss">
+      <DependentUpon>AdattipusTable.xsd</DependentUpon>
     </Content>
     <None Include="RPTDatasets\MunkaDataSet.xsd">
       <SubType>Designer</SubType>
@@ -195,7 +237,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Home\styles.css" />
+    <Content Include="Content\styles.css" />
+    <Content Include="egyetem.aspx" />
+    <Content Include="szakok.aspx" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -204,6 +248,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Default.aspx.cs">
@@ -215,6 +260,16 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="mbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="minosegbiztositasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\Adattipus.cs">
       <DependentUpon>LoginDataModel.tt</DependentUpon>
@@ -234,6 +289,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginDataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs">
       <DependentUpon>LoginDataModel.tt</DependentUpon>
     </Compile>
@@ -255,6 +311,11 @@
     <Compile Include="RDLC_ReportTutorial.aspx.designer.cs">
       <DependentUpon>RDLC_ReportTutorial.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ReportDataSets\AdattipusTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdattipusTable.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RPTDatasets\MunkaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -266,6 +327,20 @@
       <DependentUpon>UserDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="egyetem.aspx.cs">
+      <DependentUpon>egyetem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="egyetem.aspx.designer.cs">
+      <DependentUpon>egyetem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="szakok.aspx.cs">
+      <DependentUpon>szakok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="szakok.aspx.designer.cs">
+      <DependentUpon>szakok.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebRoleProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -277,8 +352,9 @@
     <Content Include="Views\Report\Index.cshtml" />
     <Content Include="Views\Report\Index1.cshtml" />
     <Content Include="Views\Home\Tanar.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Home\Profil.cshtml" />
+    <Content Include="Views\Import\Index.cshtml" />
+    <None Include="Views\Shared\nav.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -288,6 +364,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="excelfolder\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Role\" />
   </ItemGroup>
@@ -295,8 +372,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\All.rdlc" />
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\rptSzakok.rdlc" />
     <EmbeddedResource Include="Reports\rptAdat.rdlc" />
     <EmbeddedResource Include="Reports\rptUser.rdlc" />
+    <EmbeddedResource Include="Reports\tabel1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

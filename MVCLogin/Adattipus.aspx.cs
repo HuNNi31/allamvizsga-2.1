@@ -27,7 +27,7 @@ namespace MVCLogin
                 //reportparameter.Add(new ReportParameter("HiddenColumn", Session["HidenColumn"].ToString()));
                 //ReportViewer.LocalReport.SetParameters(reportparameter);
 
-                ReportDataSource datasource = new ReportDataSource("DataSetAdattipus", ds.Tables[0]);
+                ReportDataSource datasource = new ReportDataSource("DataSet1", ds.Tables[0]);
                 ReportViewer.LocalReport.Refresh();
 
                 ReportViewer.LocalReport.DataSources.Clear();

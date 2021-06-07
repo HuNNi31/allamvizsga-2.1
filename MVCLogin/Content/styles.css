@@ -1,0 +1,161 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 20px;
+    /*background: #FFEFD5;*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.container {
+    width: 100%;
+    
+
+}
+
+header {
+    
+    opacity:1;
+}
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.logo {
+    
+   
+}
+/*Home menu*/
+p{
+    text-align:center;
+}
+.hellotext{
+    padding-right:25px;
+    float: right;
+}
+
+#spare {
+
+   align-content:center;
+       
+}
+.form1 {
+    margin-top: 5px;
+    background-color: #8ec9bb;
+    border-style: ridge;
+    float: inherit;
+}
+/*Home menu end */
+
+/*Navigation bar*/
+nav {
+   
+}
+
+ul {
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: white;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+    li a {
+        color: black;
+    }
+
+    li:hover {
+        background-color: #8ec9bb;
+        cursor: pointer;
+    }
+
+
+
+ul li ul {
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+    ul li:hover > ul,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        z-index:1;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+
+/* Change this in order to change the Dropdown symbol */
+li > a::after {
+    content: ' +';
+}
+
+li > a:only-child::after {
+    content: '';
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+.last {
+    float: right;
+}
+.filter {
+    position: fixed;
+
+    bottom: 0.1px;
+    width: 100%;
+    text-align: left;
+    padding:10px;
+}
+
+.Panel1 {
+    margin-top: 10px;
+    padding:inherit;
+    height: 100%;
+}
+
+h1{
+    padding:5px;
+}

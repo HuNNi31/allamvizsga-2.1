@@ -24,7 +24,7 @@ namespace MVCLogin.Controllers
         {
             using (minosegbiztositasEntities db = new minosegbiztositasEntities())
             {
-                var userDetails = db.Users.Where(x => x.UserName == userModel.UserName && x.Password == userModel.Password).FirstOrDefault();
+                var userDetails = db.Users.Where(x => x.UserName == userModel.UserName && x.Password == userModel.Password ).FirstOrDefault();
                 if (userDetails == null)
                 {
 
@@ -36,6 +36,7 @@ namespace MVCLogin.Controllers
                 {
                     Session["userID"] = userDetails.UserID;
                     Session["userName"] = userDetails.UserName;
+                  
                     return RedirectToAction("Index", "Home");
                 }
             }
