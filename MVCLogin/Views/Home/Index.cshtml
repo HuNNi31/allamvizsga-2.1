@@ -14,7 +14,11 @@
 
 <html>
 <head>
-
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 
     <title>Calendar</title>
     <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
@@ -31,12 +35,12 @@
 
     <div class="form1">
 
-        <h1>Dashboard</h1>
+        <h1>Fontos Hírek</h1>
 
         <form class="form">
 
 
-            <p>THIS IS HOME </p>
+            <p>Kezdőképernyő </p>
             
 
         </form>
@@ -46,9 +50,8 @@
  
 
 
-        <div id="spare">
-            
-            <img src="~/Images/kep.jpg" alt="kep" >
+        <div class="spare">
+            <img src="~/Images/sap.png" alt="kep" >
         </div>
  
 

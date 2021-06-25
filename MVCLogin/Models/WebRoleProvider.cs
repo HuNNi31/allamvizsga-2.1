@@ -1,12 +1,8 @@
-﻿using MVCLogin.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Web;
 using System.Web.Security;
-using Microsoft.AspNet.Identity;
 
-namespace MVCLogin
+namespace MVCLogin.Models
 {
     public class WebRoleProvider : RoleProvider
     {

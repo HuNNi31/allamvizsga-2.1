@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
+using System.Web.UI.WebControls;
 
-namespace MVCLogin
+namespace MVCLogin.ASPX
 {
     public partial class Default : System.Web.UI.Page
     {
@@ -26,7 +22,7 @@ namespace MVCLogin
             using (SqlConnection sqlCon = new SqlConnection(connectionString))
             {
                 sqlCon.Open();
-                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Tanar", sqlCon);
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Adattipus", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
@@ -57,12 +53,14 @@ namespace MVCLogin
                     using (SqlConnection sqlCon = new SqlConnection(connectionString))
                     {
                         sqlCon.Open();
-                        string query = "INSERT INTO Tanar (F1,F2,F3,F4) VALUES (@F1,@F2,@F3,@F4)";
+                        //string query = "INSERT INTO Tanar (F1,F2,F3,F4) VALUES (@F1,@F2,@F3,@F4)";
+                        string query = "INSERT INTO Adattipus(ID, Szakok, TanarCim, TanarNev, TanariAllas) VALUES (@ID,@Szakok,@TanarCim,@TanarNev,@TanariAllas) ";
                         SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                        sqlCmd.Parameters.AddWithValue("@F1", (gvTanar.FooterRow.FindControl("txtF1Footer") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@F2", (gvTanar.FooterRow.FindControl("txtF2Footer") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@F3", (gvTanar.FooterRow.FindControl("txtF3Footer") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@F4", (gvTanar.FooterRow.FindControl("txtF4Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@ID", (gvTanar.FooterRow.FindControl("txtF1Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Szakok", (gvTanar.FooterRow.FindControl("txtF2Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@TanarCim", (gvTanar.FooterRow.FindControl("txtF3Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@TanarNev", (gvTanar.FooterRow.FindControl("txtF4Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@TanariAllas", (gvTanar.FooterRow.FindControl("txtF5Footer") as TextBox).Text.Trim());
                         sqlCmd.ExecuteNonQuery();
                         PopulateGridview();
                         lblSuccessMessage.Text = "New Record Added";
@@ -96,13 +94,14 @@ namespace MVCLogin
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "UPDATE Tanar SET F1=@F1,F2=@F2,F3=@F3,F4=@F4 WHERE F1 = @id";
+                    string query = "UPDATE Adattipus SET ID=@ID,Szakok=@Szakok,TanarCim=@TanarCim,TanarNev=@TanarNev, TanariAllas=@TanariAllas WHERE ID = @rid";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                    sqlCmd.Parameters.AddWithValue("@F1", (gvTanar.Rows[e.RowIndex].FindControl("txtF1") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@F2", (gvTanar.Rows[e.RowIndex].FindControl("txtF2") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@F3", (gvTanar.Rows[e.RowIndex].FindControl("txtF3") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@F4", (gvTanar.Rows[e.RowIndex].FindControl("txtF4") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvTanar.DataKeys[e.RowIndex].Value.ToString()));
+                    sqlCmd.Parameters.AddWithValue("@ID", (gvTanar.Rows[e.RowIndex].FindControl("txtF1") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Szakok", (gvTanar.Rows[e.RowIndex].FindControl("txtF2") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@TanarCim", (gvTanar.Rows[e.RowIndex].FindControl("txtF3") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@TanarNev", (gvTanar.Rows[e.RowIndex].FindControl("txtF4") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@TanariAllas", (gvTanar.Rows[e.RowIndex].FindControl("txtF5") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@rid", Convert.ToInt32(gvTanar.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
                     gvTanar.EditIndex = -1;
                     PopulateGridview();
@@ -124,9 +123,9 @@ namespace MVCLogin
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "DELETE FROM Tanar WHERE F1 = @id";
+                    string query = "DELETE FROM Adattipus WHERE ID = @ID";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                    sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvTanar.DataKeys[e.RowIndex].Value.ToString()));
+                    sqlCmd.Parameters.AddWithValue("@ID", Convert.ToInt32(gvTanar.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
                     PopulateGridview();
                     lblSuccessMessage.Text = "Selected Record Deleted";

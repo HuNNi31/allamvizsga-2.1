@@ -1,16 +1,10 @@
-﻿using System;
+﻿using Microsoft.Reporting.WebForms;
+using System;
 using System.Data;
-using System.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Microsoft.Reporting.WebForms;
 using System.Data.SqlClient;
 
 
-namespace MVCLogin
+namespace MVCLogin.ASPX
 {
     public partial class egyetem : System.Web.UI.Page
     {
@@ -19,7 +13,7 @@ namespace MVCLogin
             if (!IsPostBack)
             {
                 ReportViewer.ProcessingMode = ProcessingMode.Local;
-                ReportViewer.LocalReport.ReportPath = Server.MapPath("~/Reports/tabel1.rdlc");
+                ReportViewer.LocalReport.ReportPath = Server.MapPath("~/Reports/rptEgyetem.rdlc");
                 DataSet ds = GetData("SELECT *  FROM [minosegbiztositas].[dbo].[Munka1$]");
 
                 //Paramtereezes
@@ -27,7 +21,7 @@ namespace MVCLogin
                 //reportparameter.Add(new ReportParameter("HiddenColumn", Session["HidenColumn"].ToString()));
                 //ReportViewer.LocalReport.SetParameters(reportparameter);
 
-                ReportDataSource datasource = new ReportDataSource("DataSet1", ds.Tables[0]);
+                ReportDataSource datasource = new ReportDataSource("egyetem", ds.Tables[0]);
                 ReportViewer.LocalReport.Refresh();
 
                 ReportViewer.LocalReport.DataSources.Clear();

@@ -1,16 +1,10 @@
-﻿using System;
+﻿using Microsoft.Reporting.WebForms;
+using System;
 using System.Data;
-using System.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Microsoft.Reporting.WebForms;
 using System.Data.SqlClient;
 
 
-namespace MVCLogin
+namespace MVCLogin.ASPX
 {
     public partial class szakok : System.Web.UI.Page
     {

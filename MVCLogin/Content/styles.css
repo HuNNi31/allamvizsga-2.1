@@ -47,11 +47,8 @@ p{
     float: right;
 }
 
-#spare {
 
-   align-content:center;
-       
-}
+
 .form1 {
     margin-top: 5px;
     background-color: #8ec9bb;
@@ -158,4 +155,16 @@ li > a:only-child::after {
 
 h1{
     padding:5px;
+}
+
+.spare {
+padding-top:50px;
+text-align:center;
+
+}
+
+.table {
+
+    margin-left: auto;
+    margin-right: auto;
 }

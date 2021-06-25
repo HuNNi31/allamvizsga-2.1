@@ -1,15 +1,21 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Allamvizsga </title>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="egyetem.aspx.cs" Inherits="MVCLogin.ASPX.egyetem" %>
+<%@ Register assembly="Microsoft.ReportViewer.WebForms" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <title>Szakok</title>
     <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/table_style.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
 </head>
-<body>
-    <header>
+<body> 
+
+ <header>
 
 
             <nav>
@@ -59,18 +65,24 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
     </header>
+    <form id="form1" runat="server">
+        <div style="height: 624px">
+        <asp:Panel class="Panel1" runat="server">
 
-    <div class="container body-content">
-        @RenderBody()
-        
-        <footer class="border-top footer text-white">
-            <div class="footer">
-                &copy; @DateTime.Now.Year - Csegzi Hunor 
-            </div>
-        </footer>
-    </div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">   </asp:ScriptManager>
+            <rsweb:ReportViewer ID="ReportViewer" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="100%" Height="90%"  >
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+            </rsweb:ReportViewer>
+              
+ 
+              </asp:Panel>
+
+
+        </div>
+     </form>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </body>
+
 </html>
+<%-- AsyncRendering="False" SizeToReportContent="True"--%>

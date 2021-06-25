@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace MVCLogin {
+namespace MVCLogin.RPTDatasets {
     
     
     /// <summary>
@@ -10045,7 +10045,7 @@ namespace MVCLogin {
         }
     }
 }
-namespace MVCLogin.mbDataSetTableAdapters {
+namespace MVCLogin.RPTDatasets.mbDataSetTableAdapters {
     
     
     /// <summary>

@@ -1,8 +1,6 @@
 ﻿using MVCLogin.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MVCLogin.Controllers
@@ -24,7 +22,7 @@ namespace MVCLogin.Controllers
         {
             using (minosegbiztositasEntities db = new minosegbiztositasEntities())
             {
-                var userDetails = db.Users.Where(x => x.UserName == userModel.UserName && x.Password == userModel.Password ).FirstOrDefault();
+                var userDetails = db.Users.Where(x => x.UserName == userModel.UserName && x.Password == userModel.Password).FirstOrDefault();
                 if (userDetails == null)
                 {
 
@@ -36,7 +34,7 @@ namespace MVCLogin.Controllers
                 {
                     Session["userID"] = userDetails.UserID;
                     Session["userName"] = userDetails.UserName;
-                  
+
                     return RedirectToAction("Index", "Home");
                 }
             }
@@ -44,8 +42,17 @@ namespace MVCLogin.Controllers
 
         public ActionResult LogOut()
         {
-            int userId = (int)Session["userID"];
+
             Session.Abandon();
+            Session.Clear();
+            Response.ClearHeaders();
+            Response.AddHeader("Cache-Control", "no-cache, no-store, max-age=0, must-revalidate");
+            Response.AddHeader("Pragma", "no-cache");
+            Response.Buffer = true;
+            Response.ExpiresAbsolute = DateTime.Now.AddDays(-1d);
+            Response.Expires = -1500;
+            Response.CacheControl = "no-cache";
+            Session["userID"] = null;
             return RedirectToAction("Index", "Login");
         }
 

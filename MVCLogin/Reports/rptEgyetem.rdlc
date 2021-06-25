@@ -2,7 +2,7 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Textbox Name="Textbox17">
+      <Textbox Name="Textbox1">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
@@ -15,30 +15,12 @@
             </TextRuns>
             <Style />
           </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>A4es meret</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>0.75353cm</Top>
-        <Left>1.48167cm</Left>
-        <Height>0.99624cm</Height>
-        <Width>12.87167cm</Width>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>1.49437cm</Top>
+        <Left>2.1082cm</Left>
+        <Height>1.06567cm</Height>
+        <Width>12.25783cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -53,16 +35,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.72584cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.80717cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.19333cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.881cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -71,7 +53,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox1">
+                    <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -85,7 +67,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -101,7 +83,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox3">
+                    <Textbox Name="Textbox4">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -115,7 +97,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -131,7 +113,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox5">
+                    <Textbox Name="Textbox6">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -145,7 +127,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -161,7 +143,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="Textbox8">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -175,7 +157,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -336,11 +318,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Top>2.6797cm</Top>
-        <Left>9.29217cm</Left>
+        <DataSetName>egyetem</DataSetName>
+        <Top>3.1877cm</Top>
+        <Left>3.5687cm</Left>
         <Height>1.2cm</Height>
-        <Width>14.60734cm</Width>
+        <Width>10cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -349,20 +331,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>27.7cm</Height>
-    <Style>
-      <Border>
-        <Style>None</Style>
-      </Border>
-      <TopBorder>
-        <Color>Brown</Color>
-      </TopBorder>
-      <LeftBorder>
-        <Color>Black</Color>
-      </LeftBorder>
-    </Style>
+    <Height>2in</Height>
+    <Style />
   </Body>
-  <Width>23.89951cm</Width>
+  <Width>6.66701in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -375,25 +347,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="tabel1DataSet">
+    <DataSource Name="mbDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>527f9186-3ea5-4eaf-8ad0-80e7a036b243</rd:DataSourceID>
-    </DataSource>
-    <DataSource Name="tablesDataSet">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>68b85d41-6871-4774-b8d8-7112bc7f9c5e</rd:DataSourceID>
+      <rd:DataSourceID>ed38e4b1-018d-40cb-aeee-1ba04c8a53ac</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="egyetem">
       <Query>
-        <DataSourceName>tablesDataSet</DataSourceName>
+        <DataSourceName>mbDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -415,8 +380,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>tablesDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\tablesDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>mbDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Chrome Downloads\allamvizsga--Csegzi-Hunor-main\allamvizsga--Csegzi-Hunor-main\MVCLogin\mbDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Munka1$</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -425,5 +390,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>7cfd84c1-8b61-4fb0-b141-3e077ceef18b</rd:ReportID>
+  <rd:ReportID>b9e9df6c-1050-42ef-8358-df2cf4868f12</rd:ReportID>
 </Report>

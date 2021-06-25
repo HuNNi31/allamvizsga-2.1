@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MVCLogin.RouteConfig" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.MvcApplication" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ASPX.RDLC_ReportTutorial1" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAAAAAAAAAAEAAIAAAAAABAAAAAAIAAAA=</HashCode>
+      <FileName>ASPX\Adattipus.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ASPX.Default" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAIAgEBCAAAAAAIAAAAAAEAAAAAQIIAAA=</HashCode>
+      <FileName>ASPX\Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ASPX.egyetem" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>ASPX\egyetem.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ASPX.szakok">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAAAAAAAAAAEAAIAAAAAABAAAAAAIAAAA=</HashCode>
+      <FileName>ASPX\szakok.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ASPX.users" Collapsed="true">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAAAAAAAAAAEAAIAAAAAABAAAAAAIAAAA=</HashCode>
+      <FileName>ASPX\users.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Controllers.HomeController">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAABAAAACAAAAAABAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Controllers.ImportController">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAIAEACAAAAAA=</HashCode>
+      <FileName>Controllers\ImportController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Controllers.LoginController">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgABAAAAAAAAAAAAAAEAAAIAAAA=</HashCode>
+      <FileName>Controllers\LoginController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Controllers.ReportController" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ReportController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.minosegbiztositasEntities" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAEgABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LoginDataModel.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.Adattipus" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAhgAAAAAggABAAAAAAACEIAQQAIAAgAQA=</HashCode>
+      <FileName>Models\Adattipus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.Role">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.User">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAgAAgAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.Product">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.Models.WebRoleProvider" Collapsed="true">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEEAAwAAAEAAAAAAAABAAAAAAAAAIAAAAEAAEQAAA=</HashCode>
+      <FileName>Models\WebRoleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ReportDataSets.AdattipusTable" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="MVCLogin.ReportDataSets.AdattipusTable.AdattipusRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MVCLogin.ReportDataSets.AdattipusTable.AdattipusDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MVCLogin.ReportDataSets.AdattipusTable.AdattipusRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MVCLogin.ReportDataSets.AdattipusTable.AdattipusRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgwAAAAJABAAAQAAAAAgDQBgAAAAAAEEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ReportDataSets.AdattipusTableTableAdapters.AdattipusTableAdapter" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.ReportDataSets.AdattipusTableTableAdapters.TableAdapterManager">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MVCLogin.ReportDataSets.AdattipusTableTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="MVCLogin.ReportDataSets.AdattipusTableTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQEAACAAAABABQEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSet" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgBBBwIBgwARACJIFhAoQCaACAgDQhhMgIQWhEPgBRA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.MunkaDataSet" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgwAAAAJABAAAQAAAAAgDQBgAAAAAAEEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.UserDataSet" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAwAAAAJABAAIQAQAAAgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.AdattipusTableAdapter" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.AktivitasTableAdapter" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.FormatumTableAdapter" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.Graduri_de_promovareTableAdapter" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.GranturiTableAdapter" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.ISBNtananyagTableAdapter" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.Munka1_TableAdapter" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.Munka2_TableAdapter" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.RoleTableAdapter" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.SzakAllapotTableAdapter" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.SzakokTableAdapter">
+    <Position X="10" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.TanarTableAdapter" Collapsed="true">
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.TanarAllasTipusTableAdapter" Collapsed="true">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.TanarCimTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.TanarFizetesTipusTableAdapter" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.UserTableAdapter" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.mbDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eQkABCAAYEJBBQUBAAAEMCAgAAAGgIRBAAQACIAAFBQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.MunkaDataSetTableAdapters.AdattipusTableAdapter" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.MunkaDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MVCLogin.RPTDatasets.MunkaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="MVCLogin.RPTDatasets.MunkaDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQEAACAAAABABQEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.UserDataSetTableAdapters.UserTableAdapter" Collapsed="true">
+    <Position X="10.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MVCLogin.RPTDatasets.UserDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MVCLogin.RPTDatasets.UserDataSetTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="MVCLogin.RPTDatasets.UserDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAEMAAgAAACgAAAAAQAAIAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SqlServerTypes.Utilities" Collapsed="true">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>SqlServerTypes\Loader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

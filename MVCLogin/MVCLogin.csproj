@@ -129,7 +129,7 @@
     <Content Include="Content\evo-calendar.orange-coral.css" />
     <Content Include="Content\login_style.css" />
     <Content Include="Content\table_style.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="ASPX\Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\addnew.png" />
     <Content Include="Images\cancel.png" />
@@ -137,6 +137,7 @@
     <Content Include="Images\edit.png" />
     <Content Include="Images\kep.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\sap.png" />
     <Content Include="Images\save.png" />
     <Content Include="Models\LoginDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -148,8 +149,8 @@
       <DependentUpon>LoginDataModel.edmx</DependentUpon>
       <LastGenOutput>LoginDataModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Adattipus.aspx" />
-    <Content Include="RDLC_ReportTutorial.aspx" />
+    <Content Include="ASPX\Adattipus.aspx" />
+    <Content Include="ASPX\users.aspx" />
     <Content Include="RPTDatasets\UserDataSet.xsc">
       <DependentUpon>UserDataSet.xsd</DependentUpon>
     </Content>
@@ -166,27 +167,17 @@
     <Content Include="ReportDataSets\AdattipusTable.xsc">
       <DependentUpon>AdattipusTable.xsd</DependentUpon>
     </Content>
-    <Content Include="minosegbiztositasDataSet.xsc">
-      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
-    </Content>
-    <Content Include="mbDataSet.xsc">
+    <Content Include="RPTDatasets\mbDataSet.xsc">
       <DependentUpon>mbDataSet.xsd</DependentUpon>
     </Content>
-    <None Include="mbDataSet.xsd">
+    <Content Include="ClassDiagram.cd" />
+    <None Include="RPTDatasets\mbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>mbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <Content Include="mbDataSet.xss">
+    <Content Include="RPTDatasets\mbDataSet.xss">
       <DependentUpon>mbDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="minosegbiztositasDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>minosegbiztositasDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="minosegbiztositasDataSet.xss">
-      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
     </Content>
     <None Include="ReportDataSets\AdattipusTable.xsd">
       <SubType>Designer</SubType>
@@ -238,8 +229,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\styles.css" />
-    <Content Include="egyetem.aspx" />
-    <Content Include="szakok.aspx" />
+    <Content Include="ASPX\egyetem.aspx" />
+    <Content Include="ASPX\szakok.aspx" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -251,25 +242,20 @@
     <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ReportController.cs" />
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="ASPX\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="ASPX\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="mbDataSet.Designer.cs">
+    <Compile Include="RPTDatasets\mbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>mbDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="minosegbiztositasDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>minosegbiztositasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\Adattipus.cs">
       <DependentUpon>LoginDataModel.tt</DependentUpon>
@@ -297,19 +283,19 @@
       <DependentUpon>LoginDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Adattipus.aspx.cs">
+    <Compile Include="ASPX\Adattipus.aspx.cs">
       <DependentUpon>Adattipus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Adattipus.aspx.designer.cs">
+    <Compile Include="ASPX\Adattipus.aspx.designer.cs">
       <DependentUpon>Adattipus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RDLC_ReportTutorial.aspx.cs">
-      <DependentUpon>RDLC_ReportTutorial.aspx</DependentUpon>
+    <Compile Include="ASPX\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RDLC_ReportTutorial.aspx.designer.cs">
-      <DependentUpon>RDLC_ReportTutorial.aspx</DependentUpon>
+    <Compile Include="ASPX\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
     </Compile>
     <Compile Include="ReportDataSets\AdattipusTable.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -327,21 +313,21 @@
       <DependentUpon>UserDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="egyetem.aspx.cs">
+    <Compile Include="ASPX\egyetem.aspx.cs">
       <DependentUpon>egyetem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="egyetem.aspx.designer.cs">
+    <Compile Include="ASPX\egyetem.aspx.designer.cs">
       <DependentUpon>egyetem.aspx</DependentUpon>
     </Compile>
-    <Compile Include="szakok.aspx.cs">
+    <Compile Include="ASPX\szakok.aspx.cs">
       <DependentUpon>szakok.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="szakok.aspx.designer.cs">
+    <Compile Include="ASPX\szakok.aspx.designer.cs">
       <DependentUpon>szakok.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebRoleProvider.cs" />
+    <Compile Include="Models\WebRoleProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -349,8 +335,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Report\Index.cshtml" />
-    <Content Include="Views\Report\Index1.cshtml" />
     <Content Include="Views\Home\Tanar.cshtml" />
     <Content Include="Views\Home\Profil.cshtml" />
     <Content Include="Views\Import\Index.cshtml" />
@@ -366,6 +350,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="excelfolder\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Reports\" />
     <Folder Include="Views\Role\" />
   </ItemGroup>
   <ItemGroup>
@@ -374,10 +359,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Reports\All.rdlc" />
     <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\rptEgyetem.rdlc" />
     <EmbeddedResource Include="Reports\rptSzakok.rdlc" />
     <EmbeddedResource Include="Reports\rptAdat.rdlc" />
     <EmbeddedResource Include="Reports\rptUser.rdlc" />
-    <EmbeddedResource Include="Reports\tabel1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MVCLogin.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MVCLogin.ASPX.Default" %>
 
 <!DOCTYPE html>
 
@@ -15,66 +15,68 @@
     
 </head>
 <body>
-                <header>
-                     </div>
+  <header>
+
 
             <nav>
+                <div>
+                    <ul>
 
-                <ul>
+                        <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
 
-                    <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
+                        <!--ASPX linkek-->
+                        <li>
+                            <a runat="server" href="~/ASPX/users.aspx">Users</a>
+                        </li>
+                        <li>
+                            <a runat="server" href="~/ASPX/Default.aspx"> Tanárok</a>
+                        </li>
 
-                    <!--ASPX linkek-->
-                    <li>
-                        <a runat="server" href="~/RDLC_ReportTutorial.aspx">Users</a>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/Adattipus.aspx">Adattipusok</a>
-                    </li>
+                        <li>
+                            <a href="#">Tablazatok</a>
 
-                    <li> <a href="#">Tablazatok</a>
-                        
-                        <ul class="dropdown">
-                            
-                            <li><a runat="server" href="~/Default.aspx">TanarTablazat</a> </li>
-                            <li><a runat="server" href="~/szakok.aspx"> Szakok</a> </li>
-                            <li><a runat="server" href="~/egyetem.aspx"> Egyetem</a> </li>
-                            <li><a runat="server" href="~/egyetem.aspx"> Egyetem2</a> </li>
-                            
-                        </ul>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/Import/Index">Import</a>
-                    </li>
+                            <ul class="dropdown">
+                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Adattipusok</a></li>
+                               
+                                <li><a runat="server" href="~/ASPX/szakok.aspx"> Szakok</a> </li>
+                                <li><a runat="server" href="~/ASPX/egyetem.aspx"> Egyetem</a> </li>
 
-                    <li>
-                        <a runat="server" href="~/Home/Profil">Profil</a>
-                    </li>
-                    
-                    <li >
-                       
-                         <a runat="server" href="~/Login/Index">Log Out</a>
-    
-                           
-                    </li>
-                    
-                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a runat="server" href="~/Import/Index">Import</a>
+                        </li>
+
+                        <li>
+                            <a runat="server" href="~/Home/Profil">Profil</a>
+                        </li>
+
+                        <li class="last">
+
+                            <a runat="server" href="~/Login/Index">Log Out</a>
+
+
+                        </li>
+
+                    </ul>
+                </div>
             </nav>
-        </div>
-                    </header>
+      
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+    </header>
         <%--var result = new ControllerB().FileUploadMsgView("some string");--%>
-        <h2> Excel Import</h2>
-        <form method="post" enctype="multipart/form-data">
+      <h2> Tanárok bevitele </h2>
+          <%--<form method="post" enctype="multipart/form-data">
             <div>
                 <input name="file" type="file" required />
                 <button type="submit">Import</button>
-            </div>
-        </form>
-    </div>
+            </div>--%>
+ 
     <form id="form1" runat="server">
         <div class="table">
 
-            <asp:GridView ID="gvTanar" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" ShowFooter="true" DataKeyNames="F1"
+            <asp:GridView ID="gvTanar" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" ShowFooter="true" DataKeyNames="ID"
                 ShowHeaderWhenEmpty="true"
 
                 OnRowCommand="gvTanar_RowCommand" OnRowEditing="gvTanar_RowEditing" OnRowCancelingEdit="gvTanar_RowCancelingEdit"
@@ -96,46 +98,57 @@
                 <Columns>
                     <asp:TemplateField HeaderText="ID">
                         <ItemTemplate>
-                            <asp:Label Text='<%# Eval("F1") %>' runat="server" />
+                            <asp:Label Text='<%# Eval("ID") %>' runat="server" />
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtF1" Text='<%# Eval("F1") %>' runat="server" />
+                            <asp:TextBox ID="txtF1" Text='<%# Eval("ID") %>' runat="server" />
                         </EditItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="txtF1Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tanár Neve">
+                    <asp:TemplateField HeaderText="Tanár szak">
                         <ItemTemplate>
-                            <asp:Label Text='<%# Eval("F2") %>' runat="server" />
+                            <asp:Label Text='<%# Eval("Szakok") %>' runat="server" />
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtF2" Text='<%# Eval("F2") %>' runat="server" />
+                            <asp:TextBox ID="txtF2" Text='<%# Eval("Szakok") %>' runat="server" />
                         </EditItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="txtF2Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tanszék">
+                    <asp:TemplateField HeaderText="Tanár Címe">
                         <ItemTemplate>
-                            <asp:Label Text='<%# Eval("F3") %>' runat="server" />
+                            <asp:Label Text='<%# Eval("TanarCim") %>' runat="server" />
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtF3" Text='<%# Eval("F3") %>' runat="server" />
+                            <asp:TextBox ID="txtF3" Text='<%# Eval("TanarCim") %>' runat="server" />
                         </EditItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="txtF3Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Órák száma">
+                    <asp:TemplateField HeaderText="Tanár Neve">
                         <ItemTemplate>
-                            <asp:Label Text='<%# Eval("F4") %>' runat="server" />
+                            <asp:Label Text='<%# Eval("TanarNev") %>' runat="server" />
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtF4" Text='<%# Eval("F4") %>' runat="server" />
+                            <asp:TextBox ID="txtF4" Text='<%# Eval("TanarNev") %>' runat="server" />
                         </EditItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="txtF4Footer" runat="server" />
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                     <asp:TemplateField HeaderText="Órák száma">
+                        <ItemTemplate>
+                            <asp:Label Text='<%# Eval("TanariAllas") %>' runat="server" />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtF5" Text='<%# Eval("TanariAllas") %>' runat="server" />
+                        </EditItemTemplate>
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtF5Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField>

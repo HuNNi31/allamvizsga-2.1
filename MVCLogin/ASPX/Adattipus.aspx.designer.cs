@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVCLogin
+namespace MVCLogin.ASPX
 {
 
 
-    public partial class szakok
+    public partial class RDLC_ReportTutorial1
     {
 
         /// <summary>
