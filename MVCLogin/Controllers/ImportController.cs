@@ -26,7 +26,7 @@ namespace MVCLogin.Controllers
         {
             if (file == null || file.ContentLength == 0)
             {
-                ViewBag.Error = "Please select an excel file";
+                ViewBag.Error = "Csak Excel formátum elfogadott";
                 return View("Index");
             }
             else
@@ -42,7 +42,7 @@ namespace MVCLogin.Controllers
                 }
                 else
                 {
-                    ViewBag.Error = "File type is incorrect<br>";
+                    ViewBag.Error = "Helytelen fájl formátum<br>";
                     return View("Index");
                 }
             }
@@ -73,7 +73,7 @@ namespace MVCLogin.Controllers
             oda.Fill(ds);
             con.Open();
             // create temp table
-            SqlCommand cmd = new SqlCommand("Create table #MyTempTable(ID int, Szakok nvarchar(50), TanarCim nvarchar(50), TanarNev nvarchar(50), Tanszek nvarchar(50), TanariAllas nvarchar(50))", con);
+            SqlCommand cmd = new SqlCommand("Create table #MyTempTable(ID int, Szakok nvarchar(50), TanarCim nvarchar(50), TanarNev nvarchar(50), Tanszek nvarchar(50), TanariAllas nvarchar(50), Aktivitas nvarchar(50), Gradul_de_multumire int)", con);
             cmd.ExecuteNonQuery();
 
             // create temp table
@@ -92,6 +92,8 @@ namespace MVCLogin.Controllers
             bulkCopy.ColumnMappings.Add("TanarNev", "TanarNev");
             bulkCopy.ColumnMappings.Add("Tanszek", "Tanszek");
             bulkCopy.ColumnMappings.Add("TanariAllas", "TanariAllas");
+            bulkCopy.ColumnMappings.Add("Aktivitas", "Aktivitas");
+            bulkCopy.ColumnMappings.Add("Gradul_de_multumire", "Gradul_de_multumire");
             //string query2 = string.Format("INSERT INTO Adattipus SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)");
 
 
@@ -104,13 +106,15 @@ namespace MVCLogin.Controllers
                                                    "Table_A.TanarCim = Table_B.TanarCim," +
                                                    "Table_A.TanarNev = Table_B.TanarNev," +
                                                    "Table_A.Tanszek = Table_B.Tanszek, " +
-                                                   "Table_A.TanariAllas = Table_B.TanariAllas " +
+                                                   "Table_A.TanariAllas = Table_B.TanariAllas, " +
+                                                   "Table_A.Aktivitas = Table_B.Aktivitas, " +
+                                                   "Table_A.Gradul_de_multumire = Table_B.Gradul_de_multumire " +
                                             "FROM " +
                                                     "Adattipus AS Table_A " +
                                                     "INNER JOIN #MyTempTable AS Table_B " +
                                                         "ON Table_A.ID = Table_B.ID", con);
             cmd2.ExecuteNonQuery();
-            SqlCommand cmd3 = new SqlCommand("INSERT Adattipus(ID,Szakok,TanarCim,TanarNev,Tanszek, TanariAllas) SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)", con);
+            SqlCommand cmd3 = new SqlCommand("INSERT Adattipus(ID,Szakok,TanarCim,TanarNev,Tanszek, TanariAllas,Aktivitas,Gradul_de_multumire) SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)", con);
             cmd3.ExecuteNonQuery();
 
             con.Close();

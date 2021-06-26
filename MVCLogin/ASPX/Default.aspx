@@ -15,29 +15,28 @@
     
 </head>
 <body>
-  <header>
+   <header>
 
 
             <nav>
                 <div>
                     <ul>
 
-                        <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
+                        <li> <a class="active" runat="server" href="~/Home/Index">Főmenü</a></li>
 
                         <!--ASPX linkek-->
                         <li>
-                            <a runat="server" href="~/ASPX/users.aspx">Users</a>
+                            <a runat="server" href="~/ASPX/users.aspx">Felhasználók</a>
                         </li>
                         <li>
-                            <a runat="server" href="~/ASPX/Default.aspx"> Tanárok</a>
+                            <a runat="server" href="~/ASPX/Default.aspx"> Diákok</a>
                         </li>
 
                         <li>
                             <a href="#">Tablazatok</a>
 
                             <ul class="dropdown">
-                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Adattipusok</a></li>
-                               
+                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Diák jelentés</a></li>                              
                                 <li><a runat="server" href="~/ASPX/szakok.aspx"> Szakok</a> </li>
                                 <li><a runat="server" href="~/ASPX/egyetem.aspx"> Egyetem</a> </li>
 
@@ -53,7 +52,7 @@
 
                         <li class="last">
 
-                            <a runat="server" href="~/Login/Index">Log Out</a>
+                            <a runat="server" href="~/Login/Index">Kijelentkezés</a>
 
 
                         </li>
@@ -65,8 +64,9 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
     </header>
+
         <%--var result = new ControllerB().FileUploadMsgView("some string");--%>
-      <h2> Tanárok bevitele </h2>
+      <h2> Diákok táblázata </h2>
           <%--<form method="post" enctype="multipart/form-data">
             <div>
                 <input name="file" type="file" required />
@@ -107,7 +107,7 @@
                             <asp:TextBox ID="txtF1Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tanár szak">
+                    <asp:TemplateField HeaderText="Képzés">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Szakok") %>' runat="server" />
                         </ItemTemplate>
@@ -118,7 +118,7 @@
                             <asp:TextBox ID="txtF2Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tanár Címe">
+                    <asp:TemplateField HeaderText="Szak vezető tanár neve">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("TanarCim") %>' runat="server" />
                         </ItemTemplate>
@@ -129,7 +129,7 @@
                             <asp:TextBox ID="txtF3Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tanár Neve">
+                    <asp:TemplateField HeaderText="Diák neve">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("TanarNev") %>' runat="server" />
                         </ItemTemplate>
@@ -140,7 +140,7 @@
                             <asp:TextBox ID="txtF4Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                     <asp:TemplateField HeaderText="Órák száma">
+                     <asp:TemplateField HeaderText="Jelentkezés éve">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("TanariAllas") %>' runat="server" />
                         </ItemTemplate>
@@ -149,6 +149,28 @@
                         </EditItemTemplate>
                         <FooterTemplate>
                             <asp:TextBox ID="txtF5Footer" runat="server" />
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                      <asp:TemplateField HeaderText="Aktivitás">
+                        <ItemTemplate>
+                            <asp:Label Text='<%# Eval("Aktivitas") %>' runat="server" />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtF6" Text='<%# Eval("Aktivitas") %>' runat="server" />
+                        </EditItemTemplate>
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtF6Footer" runat="server" />
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                       <asp:TemplateField HeaderText="Elégedettségi tényező">
+                        <ItemTemplate>
+                            <asp:Label Text='<%# Eval("Gradul_de_multumire") %>' runat="server" />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtF7" Text='<%# Eval("Gradul_de_multumire") %>' runat="server" />
+                        </EditItemTemplate>
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtF7Footer" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField>

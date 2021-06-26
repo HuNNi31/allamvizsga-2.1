@@ -1415,7 +1415,7 @@
                       <rd:DefaultName>Tabelul</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1448,7 +1448,7 @@
                       <rd:DefaultName>F2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1679,7 +1679,7 @@
                       <rd:DefaultName>F9</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1712,7 +1712,7 @@
                       <rd:DefaultName>F10</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1745,7 +1745,7 @@
                       <rd:DefaultName>F11</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1778,7 +1778,7 @@
                       <rd:DefaultName>F12</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1811,7 +1811,7 @@
                       <rd:DefaultName>F13</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1844,7 +1844,7 @@
                       <rd:DefaultName>F14</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1877,7 +1877,7 @@
                       <rd:DefaultName>F15</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1910,7 +1910,7 @@
                       <rd:DefaultName>F16</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1943,7 +1943,7 @@
                       <rd:DefaultName>F17</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1976,7 +1976,7 @@
                       <rd:DefaultName>F18</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -2009,7 +2009,7 @@
                       <rd:DefaultName>F19</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -2042,7 +2042,7 @@
                       <rd:DefaultName>F20</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -2051,6 +2051,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

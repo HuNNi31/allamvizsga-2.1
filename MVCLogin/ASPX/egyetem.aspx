@@ -15,29 +15,28 @@
 </head>
 <body> 
 
- <header>
+   <header>
 
 
             <nav>
                 <div>
                     <ul>
 
-                        <li> <a class="active" runat="server" href="~/Home/Index">Home</a></li>
+                        <li> <a class="active" runat="server" href="~/Home/Index">Főmenü</a></li>
 
                         <!--ASPX linkek-->
                         <li>
-                            <a runat="server" href="~/ASPX/users.aspx">Users</a>
+                            <a runat="server" href="~/ASPX/users.aspx">Felhasználók</a>
                         </li>
                         <li>
-                            <a runat="server" href="~/ASPX/Default.aspx"> Tanárok</a>
+                            <a runat="server" href="~/ASPX/Default.aspx"> Diákok</a>
                         </li>
 
                         <li>
                             <a href="#">Tablazatok</a>
 
                             <ul class="dropdown">
-                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Adattipusok</a></li>
-                               
+                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Diák jelentés</a></li>                              
                                 <li><a runat="server" href="~/ASPX/szakok.aspx"> Szakok</a> </li>
                                 <li><a runat="server" href="~/ASPX/egyetem.aspx"> Egyetem</a> </li>
 
@@ -53,7 +52,7 @@
 
                         <li class="last">
 
-                            <a runat="server" href="~/Login/Index">Log Out</a>
+                            <a runat="server" href="~/Login/Index">Kijelentkezés</a>
 
 
                         </li>
@@ -65,6 +64,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
     </header>
+
     <form id="form1" runat="server">
         <div style="height: 624px">
         <asp:Panel class="Panel1" runat="server">

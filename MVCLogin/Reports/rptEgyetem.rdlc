@@ -38,13 +38,13 @@
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>5.01883cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.001cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.738cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -320,9 +320,9 @@
         </TablixRowHierarchy>
         <DataSetName>egyetem</DataSetName>
         <Top>3.1877cm</Top>
-        <Left>3.5687cm</Left>
+        <Left>2.1082cm</Left>
         <Height>1.2cm</Height>
-        <Width>10cm</Width>
+        <Width>12.25783cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

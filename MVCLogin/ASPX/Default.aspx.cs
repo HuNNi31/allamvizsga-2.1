@@ -38,7 +38,7 @@ namespace MVCLogin.ASPX
                 gvTanar.Rows[0].Cells.Clear();
                 gvTanar.Rows[0].Cells.Add(new TableCell());
                 gvTanar.Rows[0].Cells[0].ColumnSpan = dtbl.Columns.Count;
-                gvTanar.Rows[0].Cells[0].Text = "No Data Found ..!";
+                gvTanar.Rows[0].Cells[0].Text = "Nem található adat!";
                 gvTanar.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
             }
 
@@ -54,13 +54,15 @@ namespace MVCLogin.ASPX
                     {
                         sqlCon.Open();
                         //string query = "INSERT INTO Tanar (F1,F2,F3,F4) VALUES (@F1,@F2,@F3,@F4)";
-                        string query = "INSERT INTO Adattipus(ID, Szakok, TanarCim, TanarNev, TanariAllas) VALUES (@ID,@Szakok,@TanarCim,@TanarNev,@TanariAllas) ";
+                        string query = "INSERT INTO Adattipus(ID, Szakok, TanarCim, TanarNev, TanariAllas, Aktivitas, Gradul_de_multumire) VALUES (@ID,@Szakok,@TanarCim,@TanarNev,@TanariAllas,@Aktivitas, @Gradul_de_multumire) ";
                         SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                         sqlCmd.Parameters.AddWithValue("@ID", (gvTanar.FooterRow.FindControl("txtF1Footer") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@Szakok", (gvTanar.FooterRow.FindControl("txtF2Footer") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@TanarCim", (gvTanar.FooterRow.FindControl("txtF3Footer") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@TanarNev", (gvTanar.FooterRow.FindControl("txtF4Footer") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@TanariAllas", (gvTanar.FooterRow.FindControl("txtF5Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Aktivitas", (gvTanar.FooterRow.FindControl("txtF6Footer") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Gradul_de_multumire", (gvTanar.FooterRow.FindControl("txtF7Footer") as TextBox).Text.Trim());
                         sqlCmd.ExecuteNonQuery();
                         PopulateGridview();
                         lblSuccessMessage.Text = "New Record Added";
@@ -94,13 +96,15 @@ namespace MVCLogin.ASPX
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "UPDATE Adattipus SET ID=@ID,Szakok=@Szakok,TanarCim=@TanarCim,TanarNev=@TanarNev, TanariAllas=@TanariAllas WHERE ID = @rid";
+                    string query = "UPDATE Adattipus SET ID=@ID,Szakok=@Szakok,TanarCim=@TanarCim,TanarNev=@TanarNev, TanariAllas=@TanariAllas, Aktivitas=@Aktivitas, Gradul_de_multumire=@Gradul_de_multumire  WHERE ID = @rid";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.Parameters.AddWithValue("@ID", (gvTanar.Rows[e.RowIndex].FindControl("txtF1") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Szakok", (gvTanar.Rows[e.RowIndex].FindControl("txtF2") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@TanarCim", (gvTanar.Rows[e.RowIndex].FindControl("txtF3") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@TanarNev", (gvTanar.Rows[e.RowIndex].FindControl("txtF4") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@TanariAllas", (gvTanar.Rows[e.RowIndex].FindControl("txtF5") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Aktivitas", (gvTanar.Rows[e.RowIndex].FindControl("txtF6") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Gradul_de_multumire", (gvTanar.Rows[e.RowIndex].FindControl("txtF7") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@rid", Convert.ToInt32(gvTanar.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
                     gvTanar.EditIndex = -1;
