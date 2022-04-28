@@ -12,59 +12,59 @@
     <header>
 
 
-            <nav>
-                <div>
-                    <ul>
+        <nav>
+            <div>
+                <ul>
 
-                        <li> <a class="active" runat="server" href="~/Home/Index">Főmenü</a></li>
+                    <li> <a class="active" runat="server" href="~/Home/Index">Főmenü</a></li>
 
-                        <!--ASPX linkek-->
-                        <li>
-                            <a runat="server" href="~/ASPX/users.aspx">Felhasználók</a>
-                        </li>
-                        <li>
-                            <a runat="server" href="~/ASPX/Default.aspx"> Diákok</a>
-                        </li>
+                    <!--ASPX linkek-->
+                    <li>
+                        <a runat="server" href="~/ASPX/users.aspx">Felhasználók</a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/ASPX/Default.aspx"> Diákok</a>
+                    </li>
 
-                        <li>
-                            <a href="#">Tablazatok</a>
+                    <li>
+                        <a href="#">Tablazatok</a>
 
-                            <ul class="dropdown">
-                                <li><a runat="server" href="~/ASPX/Adattipus.aspx">Diák jelentés</a></li>                              
-                                <li><a runat="server" href="~/ASPX/szakok.aspx"> Szakok</a> </li>
-                                <li><a runat="server" href="~/ASPX/egyetem.aspx"> Egyetem</a> </li>
+                        <ul class="dropdown">
+                            <li><a runat="server" href="~/ASPX/Adattipus.aspx">Diák jelentés</a></li>
+                            <li><a runat="server" href="~/ASPX/szakok.aspx"> Szakok</a> </li>
+                            <li><a runat="server" href="~/ASPX/egyetem.aspx"> Egyetem</a> </li>
 
-                            </ul>
-                        </li>
-                        <li>
-                            <a runat="server" href="~/Import/Index">Import</a>
-                        </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Import/Index">Import</a>
+                    </li>
 
-                        <li>
-                            <a runat="server" href="~/Home/Profil">Profil</a>
-                        </li>
+                    <li>
+                        <a runat="server" href="~/Home/Profil">Profil</a>
+                    </li>
 
-                        <li class="last">
+                    <li class="last">
 
-                            <a runat="server" href="~/Login/Index">Kijelentkezés</a>
+                        <a runat="server" href="~/Login/Index">Kijelentkezés</a>
 
 
-                        </li>
+                    </li>
 
-                    </ul>
-                </div>
-            </nav>
-      
+                </ul>
+            </div>
+        </nav>
+
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
     </header>
 
     <div class="container body-content">
         @RenderBody()
-        
+
         <footer class="border-top footer text-white">
             <div class="footer">
-                &copy; @DateTime.Now.Year - Csegzi Hunor 
+                &copy; @DateTime.Now.Year - Csegzi Hunor
             </div>
         </footer>
     </div>

@@ -26,7 +26,7 @@ namespace MVCLogin.Controllers
                 if (userDetails == null)
                 {
 
-                    userModel.LoginErrorMessage = "Wrong username or password.";
+                    userModel.ErrorLogin = " /Helytelen adatok";
 
                     return View("Index", userModel);
                 }
@@ -43,7 +43,7 @@ namespace MVCLogin.Controllers
         public ActionResult LogOut()
         {
 
-            Session.Abandon();
+            
             Session.Clear();
             Response.ClearHeaders();
             Response.AddHeader("Cache-Control", "no-cache, no-store, max-age=0, must-revalidate");
@@ -53,6 +53,7 @@ namespace MVCLogin.Controllers
             Response.Expires = -1500;
             Response.CacheControl = "no-cache";
             Session["userID"] = null;
+            Session.Abandon();
             return RedirectToAction("Index", "Login");
         }
 

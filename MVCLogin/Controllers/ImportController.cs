@@ -50,6 +50,7 @@ namespace MVCLogin.Controllers
 
         private void ExcelConn(string filepath)
         {
+            //kapcsolat teremtés
             string constr = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0 Xml;HDR=YES;""", filepath);
             Econ = new OleDbConnection(constr);
         }
@@ -59,26 +60,19 @@ namespace MVCLogin.Controllers
             string fullpath = Server.MapPath("/excelfolder/") + filename;
             ExcelConn(fullpath);
 
-            // create temp table
-
             // tobb sheet
-            //string query = string.Format("Select [Szakok], [TanarNev] from [{0}] Group by Szakok,TanarNev", "Sheet1$");
             string query = string.Format("Select * from [{0}]", "Sheet1$");
             OleDbCommand Ecom = new OleDbCommand(query, Econ);
             Econ.Open();
-
             DataSet ds = new DataSet();
             OleDbDataAdapter oda = new OleDbDataAdapter(query, Econ);
             Econ.Close();
             oda.Fill(ds);
             con.Open();
-            // create temp table
-            SqlCommand cmd = new SqlCommand("Create table #MyTempTable(ID int, Szakok nvarchar(50), TanarCim nvarchar(50), TanarNev nvarchar(50), Tanszek nvarchar(50), TanariAllas nvarchar(50), Aktivitas nvarchar(50), Gradul_de_multumire int)", con);
+            // Idéiglenes táblázat létrehozás
+            SqlCommand cmd = new SqlCommand("Create table #MyTempTable(ID int, Szakok nvarchar(50), TanarCim nvarchar(50), TanarNev nvarchar(50), " +
+                                             "Tanszek nvarchar(50), TanariAllas nvarchar(50), Aktivitas nvarchar(50), Gradul_de_multumire int)", con);
             cmd.ExecuteNonQuery();
-
-            // create temp table
-            //con.CommandText = string.Format(createTempCommand, "#TempTable",
-            //                      string.Join(",", columnList.Select(c => c.ToString()).ToArray()));
 
 
             DataTable dt = ds.Tables[0];
@@ -94,11 +88,11 @@ namespace MVCLogin.Controllers
             bulkCopy.ColumnMappings.Add("TanariAllas", "TanariAllas");
             bulkCopy.ColumnMappings.Add("Aktivitas", "Aktivitas");
             bulkCopy.ColumnMappings.Add("Gradul_de_multumire", "Gradul_de_multumire");
-            //string query2 = string.Format("INSERT INTO Adattipus SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)");
+
 
 
             bulkCopy.WriteToServer(dt);
-            //
+            //Felülírás
             SqlCommand cmd2 = new SqlCommand("UPDATE " +
                                                    "Table_A " +
                                             "SET " +
@@ -114,9 +108,11 @@ namespace MVCLogin.Controllers
                                                     "INNER JOIN #MyTempTable AS Table_B " +
                                                         "ON Table_A.ID = Table_B.ID", con);
             cmd2.ExecuteNonQuery();
-            SqlCommand cmd3 = new SqlCommand("INSERT Adattipus(ID,Szakok,TanarCim,TanarNev,Tanszek, TanariAllas,Aktivitas,Gradul_de_multumire) SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)", con);
+            SqlCommand cmd3 = new SqlCommand("INSERT Adattipus(ID,Szakok,TanarCim,TanarNev,Tanszek, TanariAllas,Aktivitas,Gradul_de_multumire) " +
+                                                "SELECT * FROM #MyTempTable tt WHERE NOT EXISTS(SELECT 1 FROM Adattipus yt WHERE yt.ID = tt.ID)", con);
+            //Parancs végrehajtása
             cmd3.ExecuteNonQuery();
-
+            //Kapcsolat megszakítás
             con.Close();
         }
 

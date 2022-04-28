@@ -11,7 +11,7 @@ namespace MVCLogin.ASPX
 {
 
 
-    public partial class RDLC_ReportTutorial1
+    public partial class Adattipus
     {
 
         /// <summary>

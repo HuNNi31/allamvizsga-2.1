@@ -1,8 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
 html {
     height: 100%;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 20px;
     /*background: #FFEFD5;*/
@@ -11,7 +13,6 @@ body {
     background-color: white;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -19,13 +20,10 @@ body {
 
 .container {
     width: 100%;
-    
-
 }
 
 header {
-    
-    opacity:1;
+    opacity: 1;
 }
 
     header::after {
@@ -35,18 +33,31 @@ header {
     }
 
 .logo {
-    
-   
 }
 /*Home menu*/
-p{
-    text-align:center;
+p {
+    margin-left: 120px;
+    text-align: center;
 }
-.hellotext{
-    padding-right:25px;
+h2 {
+    text-align: center;
+    text-underline-position:auto;
+}
+.hellotext {
+    padding-right: 25px;
     float: right;
 }
+/*Főoldal*/
+.spare {
+    padding-top: 50px;
+    text-align: center;
+}
 
+.import {
+    padding: 50px;
+    text-align: center;
+    border: groove;
+}
 
 
 .form1 {
@@ -54,12 +65,12 @@ p{
     background-color: #8ec9bb;
     border-style: ridge;
     float: inherit;
+    text-align: center;
 }
 /*Home menu end */
 
 /*Navigation bar*/
 nav {
-   
 }
 
 ul {
@@ -110,7 +121,7 @@ ul li ul {
         visibility: visible;
         opacity: 1;
         display: block;
-        z-index:1;
+        z-index: 1;
     }
 
     ul li ul li {
@@ -127,6 +138,7 @@ li > a::after {
 li > a:only-child::after {
     content: '';
 }
+
 .footer {
     position: fixed;
     left: 0;
@@ -135,36 +147,37 @@ li > a:only-child::after {
     text-align: left;
     padding: 20px;
 }
+
 .last {
     float: right;
 }
+
 .filter {
     position: fixed;
-
     bottom: 0.1px;
     width: 100%;
     text-align: left;
-    padding:10px;
+    padding: 10px;
 }
 
-.Panel1 {
+#Panel1 {
     margin-top: 10px;
-    padding:inherit;
+    padding: inherit;
     height: 100%;
+    text-align: center;
+}
+/*Report rendezés*/
+#ReportViewer {
+    text-align: center;
+    align-content: center;
 }
 
-h1{
-    padding:5px;
+h1 {
+    padding: 5px;
 }
 
-.spare {
-padding-top:50px;
-text-align:center;
 
-}
 
 .table {
-
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 155px;
 }

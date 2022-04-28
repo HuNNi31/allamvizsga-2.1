@@ -27,13 +27,13 @@ namespace MVCLogin.Controllers
         {
 
             return RedirectToAction("Tanar", "Home");
-            //return View("~/RDLC_ReportTutorial.aspx");
+
         }
         public ActionResult ToProfil()
         {
 
             return RedirectToAction("Profil", "Home");
-            //return View("~/RDLC_ReportTutorial.aspx");
+
         }
 
     }

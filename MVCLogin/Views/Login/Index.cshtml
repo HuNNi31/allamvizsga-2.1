@@ -10,72 +10,80 @@
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
     @*<script type="text/javascript">
-        function preventBack() { window.history.forward(); }
-        setTimeout("preventBack()", 0);
-        window.onunload = function () { null };
-    </script>*@
+            function preventBack() { window.history.forward(); }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () { null };
+        </script>*@
     <link rel="stylesheet" type="text/css" href="~/Content/login_style.css" />
 
 </head>
 <body>
-    <div class="login-div">
+    <div class="login">
         <div class="form">
 
             @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
             {
                 <table>
-                    @*<tr>
-                        
-                        <td style="text-decoration:underline">Log in</td>
-                    </tr>*@
+
                     <tr>
-                     
-                       
-                            <input type="text" placeholder="username" @Html.EditorFor(model => model.UserName)
-                       
+
+
+                        <input type="text" placeholder="felhasználónév" @Html.EditorFor(model => model.UserName)
+
                     </tr>
                     <tr>
-                        
+
                         @Html.ValidationMessageFor(model => model.UserName)
                     </tr>
 
                     <tr>
-                       
-                       
-                            <input  type="password" placeholder="password" @Html.EditorFor(model => model.Password)
-                        
+
+
+                        <input type="password" placeholder="jelszó" @Html.EditorFor(model => model.Password)
+
                     </tr>
                     <tr>
-                       
+
                         @Html.ValidationMessageFor(model => model.Password)
                     </tr>
+                    <tr></tr>
                     <tr>
-                        
-                            <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
-                        
+
+                        <label class="field-validation-error">@Html.DisplayFor(model => model.ErrorLogin)</label>
+
                     </tr>
                     <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            <td>
-                                <input class="button" type="submit" name="name" value="Login" />
-                            </td>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            <td>
-                                
-                                <input class="button" type="reset" name="name" value="Clear" />
-                            </td>
-                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input class="button" type="submit" name="name" value="Login" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+
+                            <input class="button" type="reset" name="name" value="Clear" />
+                        </td>
+
                     </tr>
                 </table>
             }
 
         </div>
-        @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-        <script src="~/Scripts/jquery.validate.min.js"></script>
-        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
-        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-        <script src="~/Scripts/jquery.validate.min.js"></script>
-        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 
     </div>
 </body>

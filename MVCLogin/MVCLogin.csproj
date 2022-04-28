@@ -126,7 +126,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\evo-calendar.orange-coral.css" />
     <Content Include="Content\login_style.css" />
     <Content Include="Content\table_style.css" />
     <Content Include="ASPX\Default.aspx" />
@@ -203,18 +202,6 @@
     <Content Include="RPTDatasets\UserDataSet.xss">
       <DependentUpon>UserDataSet.xsd</DependentUpon>
     </Content>
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -275,7 +262,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginDataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs">
       <DependentUpon>LoginDataModel.tt</DependentUpon>
     </Compile>
@@ -359,6 +345,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Reports\All.rdlc" />
     <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\rptDiak.rdlc" />
     <EmbeddedResource Include="Reports\rptEgyetem.rdlc" />
     <EmbeddedResource Include="Reports\rptSzakok.rdlc" />
     <EmbeddedResource Include="Reports\rptAdat.rdlc" />

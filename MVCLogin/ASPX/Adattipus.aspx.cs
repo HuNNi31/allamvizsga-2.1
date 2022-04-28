@@ -6,14 +6,14 @@ using System.Data.SqlClient;
 
 namespace MVCLogin.ASPX
 {
-    public partial class RDLC_ReportTutorial1 : System.Web.UI.Page
+    public partial class Adattipus : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 ReportViewer.ProcessingMode = ProcessingMode.Local;
-                ReportViewer.LocalReport.ReportPath = Server.MapPath("~/Reports/rptAdat.rdlc");
+                ReportViewer.LocalReport.ReportPath = Server.MapPath("~/Reports/rptDiak.rdlc");
                 DataSet ds = GetData("SELECT *  FROM [minosegbiztositas].[dbo].[Adattipus]");
 
                 //Paramtereezes
@@ -21,7 +21,7 @@ namespace MVCLogin.ASPX
                 //reportparameter.Add(new ReportParameter("HiddenColumn", Session["HidenColumn"].ToString()));
                 //ReportViewer.LocalReport.SetParameters(reportparameter);
 
-                ReportDataSource datasource = new ReportDataSource("DataSet1", ds.Tables[0]);
+                ReportDataSource datasource = new ReportDataSource("DataSetDiak", ds.Tables[0]);
                 ReportViewer.LocalReport.Refresh();
 
                 ReportViewer.LocalReport.DataSources.Clear();
