@@ -32,19 +32,21 @@ namespace MVCLogin.ASPX
                 da.Fill(dt);
                 //con.Close();
             }
-            //string[] x = new string[dt.Rows.Count];
-            //int[] y = new int[dt.Rows.Count];
+            string[] x = new string[dt.Rows.Count];
+            int[] y = new int[dt.Rows.Count];
 
-            //for (int i = 0; i < dt.Rows.Count; i++)
-            //{
-            //    x[i] = dt.Rows[i][0].ToString();
-            //    y[i] = Convert.ToInt32(dt.Rows[i][1]);
-            //}
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                x[i] = dt.Rows[i][0].ToString();
+                y[i] = Convert.ToInt32(dt.Rows[i][1]);
+            }
             //Chart1.DataSource = dt;
-            Chart1.Series["Series1"].XValueMember = "Tanszek";
-            Chart1.Series["Series1"].YValueMembers = "Szint";
-            Chart1.Series["Series1"].ChartType = SeriesChartType.Pie;
-            Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
+            Chart1.Series[0].Points.DataBindXY(x, y);
+            Chart1.Series[0].ChartType = SeriesChartType.Pie;
+            //Chart1.Series["Series1"].XValueMember = "Tanszek";
+            //Chart1.Series["Series1"].YValueMembers = "Szint";
+            //Chart1.Series["Series1"].ChartType = SeriesChartType.Pie;
+            //Chart1.ChartAreas["ChartArea1"].Area3DStyle.Enable3D = true;
            // Chart1.Legends["Series1"].Enabled = true;
 
             GridView1.DataSource = dt;
